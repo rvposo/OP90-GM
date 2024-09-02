@@ -1,0 +1,28 @@
+[GetXMLRecord]
+Class="Function"
+Prototype="int GetXMLRecord(char *path, char *pathxsd, DADOS_ECU_XML *dados_ecu_local);"
+
+[GetResultXMLRecord]
+Class="Function"
+Prototype="int GetResultXMLRecord(char *path, char *pathxsd, DADOS_ECU_XML *dados_res);"
+
+[GetElementValue]
+Class="Function"
+Prototype="int GetElementValue(int element, DADOS_ECU_XML *dados_ecu_local);"
+
+[GetEcuRecord]
+Class="Function"
+Prototype="int GetEcuRecord(int parent, DADOS_ECU_XML *dados_ecu_local);"
+
+[SaveEcuRecord]
+Class="Function"
+Prototype="int SaveEcuRecord(char *path, int tabular, int local, DADOS_ECU_XML dados_ecu);"
+
+[CarregaArqLiveKey]
+Class="Function"
+Prototype="int CarregaArqLiveKey(char *tab_live_key, DADOS_ECU_XML *dados_ecu_local, char *ecu_id);"
+
+[CarregaECUIDArqLiveKey]
+Class="Function"
+Prototype="int CarregaECUIDArqLiveKey(char *tab_live_key, DADOS_ECU_XML *dados_ecu_local, char *n_serie);"
+

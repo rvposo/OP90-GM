@@ -1,0 +1,212 @@
+[ESC_BAR]
+Class="Function"
+Prototype="int ESC_BAR(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LeNSerie1]
+Class="Function"
+Prototype="int LeNSerie1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LeNSerie2]
+Class="Function"
+Prototype="int LeNSerie2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Bar]
+Class="Function"
+Prototype="void Manual_Bar(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[Version_Bar]
+Class="Function"
+Prototype="void Version_Bar(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[ZeraProducao]
+Class="Function"
+Prototype="int ZeraProducao(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RejeitaMontagemBerco1]
+Class="Function"
+Prototype="int RejeitaMontagemBerco1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RejeitaMontagemBerco2]
+Class="Function"
+Prototype="int RejeitaMontagemBerco2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Quit_Bar]
+Class="Function"
+Prototype="void Quit_Bar(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[CallBack_TEXT]
+Class="Function"
+Prototype="int CallBack_TEXT(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ColetaDados_Bar]
+Class="Function"
+Prototype="void ColetaDados_Bar(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[Manual_Fim]
+Class="Function"
+Prototype="int Manual_Fim(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ThreadSistema]
+Class="Function"
+Prototype="int Manual_ThreadSistema(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Habilita_emerg]
+Class="Function"
+Prototype="int Manual_Habilita_emerg(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Reseta_emerg]
+Class="Function"
+Prototype="int Manual_Reseta_emerg(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ResetarEmergencia]
+Class="Function"
+Prototype="int Manual_ResetarEmergencia(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_TravaPorta]
+Class="Function"
+Prototype="int Manual_TravaPorta(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ContatoraVibracao]
+Class="Function"
+Prototype="int Manual_ContatoraVibracao(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Battery_1]
+Class="Function"
+Prototype="int Manual_Battery_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Crank_Run_1]
+Class="Function"
+Prototype="int Manual_Crank_Run_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_DIC_SWINPUT_Dig_1]
+Class="Function"
+Prototype="int Manual_DIC_SWINPUT_Dig_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ServiceEngineSoon_1]
+Class="Function"
+Prototype="int Manual_ServiceEngineSoon_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_VccDireto_Shunt_1]
+Class="Function"
+Prototype="int Manual_VccDireto_Shunt_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_HabilitaFonte_1]
+Class="Function"
+Prototype="int Manual_HabilitaFonte_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_PS_Inp_select1]
+Class="Function"
+Prototype="int Manual_PS_Inp_select1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Battery_2]
+Class="Function"
+Prototype="int Manual_Battery_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Crank_Run_2]
+Class="Function"
+Prototype="int Manual_Crank_Run_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_DIC_SWINPUT_Dig_2]
+Class="Function"
+Prototype="int Manual_DIC_SWINPUT_Dig_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ServiceEngineSoon_2]
+Class="Function"
+Prototype="int Manual_ServiceEngineSoon_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_VccDireto_Shunt_2]
+Class="Function"
+Prototype="int Manual_VccDireto_Shunt_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_HabilitaFonte_2]
+Class="Function"
+Prototype="int Manual_HabilitaFonte_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_PS_Inp_select2]
+Class="Function"
+Prototype="int Manual_PS_Inp_select2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ClampBerco1]
+Class="Function"
+Prototype="int Manual_ClampBerco1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ClampBerco2]
+Class="Function"
+Prototype="int Manual_ClampBerco2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ConectorBerco1]
+Class="Function"
+Prototype="int Manual_ConectorBerco1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_ConectorBerco2]
+Class="Function"
+Prototype="int Manual_ConectorBerco2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Manual_Combitac]
+Class="Function"
+Prototype="int Manual_Combitac(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LigaCluster1]
+Class="Function"
+Prototype="int LigaCluster1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LigaCluster2]
+Class="Function"
+Prototype="int LigaCluster2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DesligaCluster1]
+Class="Function"
+Prototype="int DesligaCluster1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DesligaCluster2]
+Class="Function"
+Prototype="int DesligaCluster2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LeNSerie]
+Class="Function"
+Prototype="int LeNSerie(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RejeitaProduto1]
+Class="Function"
+Prototype="int RejeitaProduto1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RejeitaProduto2]
+Class="Function"
+Prototype="int RejeitaProduto2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Vdut_1]
+Class="Function"
+Prototype="int Vdut_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Vdut_2]
+Class="Function"
+Prototype="int Vdut_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Set_DIC_SW_adj_1]
+Class="Function"
+Prototype="int Set_DIC_SW_adj_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Set_DIC_SW_adj_2]
+Class="Function"
+Prototype="int Set_DIC_SW_adj_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Rej_v_1]
+Class="Function"
+Prototype="int Rej_v_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Rej_v_2]
+Class="Function"
+Prototype="int Rej_v_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[RejRemoto]
+Class="Function"
+Prototype="int RejRemoto(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ContRemoto]
+Class="Function"
+Prototype="int ContRemoto(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BimanualRemoto]
+Class="Function"
+Prototype="int BimanualRemoto(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

@@ -1,0 +1,1023 @@
+[Project Header]
+Version = 1501
+Pathname = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/TFCP -GM - Gem.prj"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2015"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2015"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Files = 41
+Target Type = "Executable"
+Flags = 2064
+Copied From Locked InstrDrv Directory = False
+Copied from VXIPNP Directory = False
+Locked InstrDrv Name = ""
+Don't Display Deploy InstrDrv Dialog = False
+
+[Folders]
+Folder 0 = "User Interface Files"
+FolderEx 0 = "User Interface Files"
+Folder 1 = "Source Files"
+FolderEx 1 = "Source Files"
+Folder 2 = "Include Files"
+FolderEx 2 = "Include Files"
+Folder 3 = "Instrument Files"
+FolderEx 3 = "Instrument Files"
+Folder 4 = "Library Files"
+FolderEx 4 = "Library Files"
+
+[File 0001]
+File Type = "User Interface Resource"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Auto OP090 GM-GEM.uir"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Auto OP090 GM-GEM.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 0
+
+[File 0002]
+File Type = "User Interface Resource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Diag GM-Gem.uir"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Diag GM-Gem.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 0
+
+[File 0003]
+File Type = "User Interface Resource"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Manual OP090 GM-GEM.uir"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Manual OP090 GM-GEM.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 0
+
+[File 0004]
+File Type = "User Interface Resource"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Mensagens.uir"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Mensagens.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 0
+
+[File 0005]
+File Type = "User Interface Resource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "padrao.uir"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/padrao.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 0
+
+[File 0006]
+File Type = "User Interface Resource"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Senha.uir"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Senha.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+Folder Id = 0
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Auxiliar OP090 GM-GEM.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Auxiliar OP090 GM-GEM.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0008]
+File Type = "CSource"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "base64.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/base64.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0009]
+File Type = "CSource"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Callbacks GM-Gem.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Callbacks GM-Gem.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0010]
+File Type = "CSource"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Callbacks OP090 GM-GEM.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Callbacks OP090 GM-GEM.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0011]
+File Type = "CSource"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CAN GM-Gem.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/CAN GM-Gem.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0012]
+File Type = "CSource"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CIMSockets.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/CIMSockets.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0013]
+File Type = "CSource"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "cvixml.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/cvixml.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0014]
+File Type = "CSource"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CyberXML.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/CyberXML.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0015]
+File Type = "CSource"
+Res Id = 15
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Global Error Tracking.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Global Error Tracking.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0016]
+File Type = "CSource"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Main OP090 GM-GEM.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Main OP090 GM-GEM.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0017]
+File Type = "CSource"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Master_e_Negative_Samples.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Master_e_Negative_Samples.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0018]
+File Type = "CSource"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "National_USB_DAQ.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/National_USB_DAQ.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0019]
+File Type = "CSource"
+Res Id = 19
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Sistema OP090 GM-GEM.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Sistema OP090 GM-GEM.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0020]
+File Type = "CSource"
+Res Id = 20
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Testes OP090 GM-GEM.c"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Testes OP090 GM-GEM.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+Folder Id = 1
+
+[File 0021]
+File Type = "Include"
+Res Id = 21
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Adm Equip.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Adm Equip.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0022]
+File Type = "Include"
+Res Id = 22
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Auto OP090 GM-GEM.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Auto OP090 GM-GEM.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0023]
+File Type = "Include"
+Res Id = 23
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "bd-support.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/bd-support.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0024]
+File Type = "Include"
+Res Id = 24
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CAN GM-Gem.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/CAN GM-Gem.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0025]
+File Type = "Include"
+Res Id = 25
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CIMSockets.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/CIMSockets.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0026]
+File Type = "Include"
+Res Id = 26
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CyberXML.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/CyberXML.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0027]
+File Type = "Include"
+Res Id = 27
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "DAQ_MX.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/DAQ_MX.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0028]
+File Type = "Include"
+Res Id = 28
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Diag GM-Gem.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Diag GM-Gem.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0029]
+File Type = "Include"
+Res Id = 29
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Main OP090 GM-GEM.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Main OP090 GM-GEM.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0030]
+File Type = "Include"
+Res Id = 30
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Manual OP090 GM-GEM.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Manual OP090 GM-GEM.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0031]
+File Type = "Include"
+Res Id = 31
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Master_e_Negative_Samples.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Master_e_Negative_Samples.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0032]
+File Type = "Include"
+Res Id = 32
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "niModInstCustCtrl.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/niModInstCustCtrl.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0033]
+File Type = "Include"
+Res Id = 33
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "padrao.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/padrao.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0034]
+File Type = "Include"
+Res Id = 34
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Periodicidade.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Periodicidade.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0035]
+File Type = "Include"
+Res Id = 35
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SenhaParametros.h"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/SenhaParametros.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+Folder Id = 2
+
+[File 0036]
+File Type = "Function Panel"
+Res Id = 36
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "CIMSockets.fp"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/CIMSockets.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 3
+
+[File 0037]
+File Type = "Function Panel"
+Res Id = 37
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "cvixml.fp"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/cvixml.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 3
+
+[File 0038]
+File Type = "Function Panel"
+Res Id = 38
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "msxml.fp"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/msxml.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+Folder Id = 3
+
+[File 0039]
+File Type = "Library"
+Res Id = 39
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "Adm Equip.lib"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/Adm Equip.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Library Files"
+Folder Id = 4
+
+[File 0040]
+File Type = "Library"
+Res Id = 40
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "bd-support.lib"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/bd-support.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Library Files"
+Folder Id = 4
+
+[File 0041]
+File Type = "Library"
+Res Id = 41
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "SenhaParametros.lib"
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/SenhaParametros.lib"
+Exclude = False
+Project Flags = 0
+Folder = "Library Files"
+Folder Id = 4
+
+[Custom Build Configs]
+Num Custom Build Configs = 0
+
+[Default Build Config Debug]
+Config Name = "Debug"
+Is 64-Bit = False
+Is Release = False
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "None"
+Warning List None = "0,1,2,3,4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = True
+Enable Pointer Mismatch Warning = True
+Enable Unreachable Code Warning = True
+Enable Assignment In Conditional Warning = True
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = False
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "../App icon 48x48.ico"
+Icon File = "/e/SW TFCP - GM-Gem/App icon 48x48.ico"
+Application Title = ""
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "0,0,0,0"
+Numeric Prod Version = "0,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "Visteon Corp."
+Company Name Ex = "Visteon Corp."
+File Description = "TFCP GM-Gem_dbg (Debug x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "1.0"
+Internal Name = "TFCP GM-Gem_dbg"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © Visteon Corp., 2007"
+Legal Copyright Ex = "Copyright © Visteon Corp., 2007"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "TFCP GM-Gem_dbg.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Visteon MontagemFinal KVS"
+Product Name Ex = "Visteon MontagemFinal KVS"
+Product Version = "1.0"
+Product Version Ex = "1.0"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release]
+Config Name = "Release"
+Is 64-Bit = False
+Is Release = True
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "None"
+Warning List None = "4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = False
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Assignment In Conditional Warning = False
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = False
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "../App icon 48x48.ico"
+Icon File = "/e/SW TFCP - GM-Gem/App icon 48x48.ico"
+Application Title = ""
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "0,0,0,0"
+Numeric Prod Version = "0,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "Visteon Corp."
+Company Name Ex = "Visteon Corp."
+File Description = "TFCP GM-Gem (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "1.0"
+Internal Name = "TFCP GM-Gem"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © Visteon Corp., 2007"
+Legal Copyright Ex = "Copyright © Visteon Corp., 2007"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "TFCP GM-Gem.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Visteon MontagemFinal KVS"
+Product Name Ex = "Visteon MontagemFinal KVS"
+Product Version = "1.0"
+Product Version Ex = "1.0"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Debug64]
+Config Name = "Debug64"
+Is 64-Bit = True
+Is Release = False
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "None"
+Warning List None = "4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = False
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Assignment In Conditional Warning = False
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = False
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "0,0,0,0"
+Numeric Prod Version = "0,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "Visteon Corp."
+Company Name Ex = "Visteon Corp."
+File Description = "TFCP GM-Gem (Debug x64)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "1.0"
+Internal Name = "TFCP GM-Gem"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © Visteon Corp., 2007"
+Legal Copyright Ex = "Copyright © Visteon Corp., 2007"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "TFCP GM-Gem.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Visteon MontagemFinal KVS"
+Product Name Ex = "Visteon MontagemFinal KVS"
+Product Version = "1.0"
+Product Version Ex = "1.0"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release64]
+Config Name = "Release64"
+Is 64-Bit = True
+Is Release = True
+Default Calling Convention = "cdecl"
+Optimization Level = "No optimizations"
+Require Prototypes = True
+Show Warning IDs in Build Output = False
+Selected Warning Level = "None"
+Warning List None = "4,9,84,105,106,107,108,109,110,111"
+Warning List Common = ""
+Warning List Extended = ""
+Warning List All = ""
+Warning Mode = 0
+Enable Unreferenced Identifiers Warning = False
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Assignment In Conditional Warning = False
+Uninitialized Locals Compile Warning = "Aggressive"
+Require Return Values = True
+Enable C99 Extensions = False
+Enable OpenMP Extensions = False
+Stack Size = 250000
+Stack Reserve = 1048576
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Runtime Binding = "Shared"
+Embed Project .UIRs = False
+Generate Map File = False
+Embed Timestamp = True
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Register ActiveX Server = False
+Numeric File Version = "0,0,0,0"
+Numeric Prod Version = "0,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "Visteon Corp."
+Company Name Ex = "Visteon Corp."
+File Description = "TFCP GM-Gem (Release x64)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "1.0"
+Internal Name = "TFCP GM-Gem"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © Visteon Corp., 2007"
+Legal Copyright Ex = "Copyright © Visteon Corp., 2007"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "TFCP GM-Gem.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Visteon MontagemFinal KVS"
+Product Name Ex = "Visteon MontagemFinal KVS"
+Product Version = "1.0"
+Product Version Ex = "1.0"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Enable C99 Extensions = False
+Uninitialized Locals Compile Warning = "Aggressive"
+Precompile Prefix Header = False
+Prefix Header File = ""
+
+[Run Options]
+Stack Size = 250000
+Stack Commit = 4096
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = False
+Include Path 1 = "/i/Vision National/Libs/include"
+Include Path 2 Is Rel = False
+Include Path 2 = "/i/VisionNational/Libs/include"
+Include Path 3 Is Rel = True
+Include Path 3 Rel To = "Project"
+Include Path 3 Rel Path = ""
+Include Path 3 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "TFCP GM-Gem_dbg.exe"
+Executable File_Debug = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/TFCP GM-Gem_dbg.exe"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "TFCP GM-Gem.exe"
+Executable File_Release = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/TFCP GM-Gem.exe"
+Executable File_Debug64 Is Rel = True
+Executable File_Debug64 Rel To = "Project"
+Executable File_Debug64 Rel Path = "TFCP GM-Gem.exe"
+Executable File_Debug64 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/TFCP GM-Gem.exe"
+Executable File_Release64 Is Rel = True
+Executable File_Release64 Rel To = "Project"
+Executable File_Release64 Rel Path = "TFCP GM-Gem.exe"
+Executable File_Release64 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 1.7_BD/TFCP GM-Gem.exe"
+Icon File Is Rel = True
+Icon File Rel To = "Project"
+Icon File Rel Path = "../App icon 48x48.ico"
+Icon File = "/e/SW TFCP - GM-Gem/App icon 48x48.ico"
+Application Title = ""
+Numeric File Version = "0,0,0,0"
+Numeric Prod Version = "0,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = "Visteon Corp."
+Company Name Ex = "Visteon Corp."
+File Description = "TFCP GM-Gem (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "1.0"
+Internal Name = "TFCP GM-Gem"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright © Visteon Corp., 2007"
+Legal Copyright Ex = "Copyright © Visteon Corp., 2007"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "TFCP GM-Gem.exe"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = "Visteon MontagemFinal KVS"
+Product Name Ex = "Visteon MontagemFinal KVS"
+Product Version = "1.0"
+Product Version Ex = "1.0"
+Special Build = ""
+Special Build Ex = ""
+DLL Exports = "Include File Symbols"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+tpcEnabled x64 = 0
+tpcOverrideEnvironment x64 = 0
+

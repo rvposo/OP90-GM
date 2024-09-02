@@ -1,0 +1,77 @@
+HDRS = 	"i:\\Vision National\\Libs\\include"
+	"i:\\VisionNational\\Libs\\include"
+	"c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+LOCATE on "Adm Equip.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Auto OP090 GM-GEM.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Auxiliar OP090 GM-GEM.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "base64.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "bd-support.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Callbacks GM-Gem.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Callbacks OP090 GM-GEM.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "CAN GM-Gem.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "CAN GM-Gem.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "CIMSockets.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "CIMSockets.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "cvixml.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "CyberXML.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "CyberXML.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "DAQ_MX.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Diag GM-Gem.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Global Error Tracking.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Main OP090 GM-GEM.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Main OP090 GM-GEM.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Manual OP090 GM-GEM.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Master_e_Negative_Samples.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Master_e_Negative_Samples.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "National_USB_DAQ.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "niModInstCustCtrl.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "padrao.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Periodicidade.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "SenhaParametros.h" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Sistema OP090 GM-GEM.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+LOCATE on "Testes OP090 GM-GEM.c" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores" ;
+Object "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\CIMSockets.obj" : "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\CIMSockets.c" ;
+FILENUM on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\CIMSockets.obj" = 1 ;
+DEFPROTS on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\CIMSockets.obj" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\CIMSockets.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\CIMSockets.obj" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\CIMSockets.obj.out" ;
+PrjObjects += "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\CIMSockets.obj" ;
+Object "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\cvixml.obj" : "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvixml.c" ;
+FILENUM on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\cvixml.obj" = 2 ;
+DEFPROTS on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\cvixml.obj" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\cvixml.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\cvixml.obj" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\cvixml.obj.out" ;
+PrjObjects += "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\cvixml.obj" ;
+Object "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\msxml.obj" : "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\msxml.c" ;
+FILENUM on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\msxml.obj" = 3 ;
+DEFPROTS on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\msxml.obj" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\msxml.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\msxml.obj" = "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\msxml.obj.out" ;
+PrjObjects += "c:\\Users\\cmelo\\Desktop\\Desenvolvimento\\GM\\OP90\\TFCP GM-Gem_3.2.4 Sensores\\cvibuild.TFCP -GM - Gem\\Release\\msxml.obj" ;
+Depends all : $(PrjObjects) ;

@@ -1,0 +1,284 @@
+[SetaMensTaco]
+Class="Function"
+Prototype="int SetaMensTaco(int rpm, int berco);"
+
+[SetaMensVelo]
+Class="Function"
+Prototype="int SetaMensVelo(int km, int berco);"
+
+[InicializaMensagens]
+Class="Function"
+Prototype="void InicializaMensagens(int berco);"
+
+[Envia_can_TX_NI]
+Class="Function"
+Prototype="long Envia_can_TX_NI(unsigned long Obj_handler, EX_CAN_MSG *data, int berco);"
+
+[Recebe_can_RX_NI]
+Class="Function"
+Prototype="int Recebe_can_RX_NI(int index, int berco);"
+
+[MensDiagFlowControl]
+Class="Function"
+Prototype="void MensDiagFlowControl(int berco);"
+
+[Reset_CAN]
+Class="Function"
+Prototype="void Reset_CAN(int berco);"
+
+[InicializaCAN]
+Class="Function"
+Prototype="int InicializaCAN(char *ObjName, unsigned long dwChannel, int berco);"
+
+[Get_timestamp_CAN]
+Class="Function"
+Prototype="void Get_timestamp_CAN(int tx, char *tms);"
+
+[EnviarEsperarRespDiag]
+Class="Function"
+Prototype="int EnviarEsperarRespDiag(int test_present, int berco);"
+
+[Reseta_dados_resp_cluster_CAN]
+Class="Function"
+Prototype="void Reseta_dados_resp_cluster_CAN(int berco);"
+
+[Send_diag_commands]
+Class="Function"
+Prototype="int Send_diag_commands(int berco);"
+
+[AbsTimeToString]
+Class="Function"
+Prototype="void AbsTimeToString(NCTYPE_UINT64 *time, char *TimeString);"
+
+[AtualizaMensagensCAN]
+Class="Function"
+Prototype="int AtualizaMensagensCAN(int berco);"
+
+[RodaServicoDiagnostico]
+Class="Function"
+Prototype="int RodaServicoDiagnostico(int berco);"
+
+[EnviaTestPresent]
+Class="Function"
+Prototype="void EnviaTestPresent(int berco);"
+
+[EntraDiagCustomer_GM]
+Class="Function"
+Prototype="int EntraDiagCustomer_GM(int berco);"
+
+[EntraModoEOL_GM]
+Class="Function"
+Prototype="int EntraModoEOL_GM(int berco);"
+
+[Esc_Digital_Output]
+Class="Function"
+Prototype="int Esc_Digital_Output(INPUT_CLUSTER input, int valor, int berco);"
+
+[Ler_Registro_status]
+Class="Function"
+Prototype="int Ler_Registro_status(REGISTRO_CLUSTER registro, int *valor, int berco);"
+
+[ReportClusterInfo]
+Class="Function"
+Prototype="void ReportClusterInfo(int berco);"
+
+[Ler_Analog_status]
+Class="Function"
+Prototype="int Ler_Analog_status(INPUT_CLUSTER input, int *valor, int berco);"
+
+[Ler_DI_status]
+Class="Function"
+Prototype="int Ler_DI_status(INPUT_CLUSTER input, int *valor, int berco);"
+
+[Ilumination_PWM_DIAG]
+Class="Function"
+Prototype="int Ilumination_PWM_DIAG(TELLTALES_GM_GEM lamp, int valor, int berco);"
+
+[Acende_lampada_cluster_DIAG]
+Class="Function"
+Prototype="int Acende_lampada_cluster_DIAG(TELLTALES_GM_GEM lamp, int acao, int berco);"
+
+[LedsDisplay_Customer_DIAG]
+Class="Function"
+Prototype="int LedsDisplay_Customer_DIAG(int acao, int berco);"
+
+[SetTacometroCustomer_DIAG]
+Class="Function"
+Prototype="int SetTacometroCustomer_DIAG(int rpm, int berco);"
+
+[SetGauge_eol_visteon_DIAG]
+Class="Function"
+Prototype="int SetGauge_eol_visteon_DIAG(int counts, int qual_gauge, int move_absoluto, int torque, unsigned char velocidade, int espera_fim_movmento, int berco);"
+
+[SetVelocimetroCustomer_DIAG]
+Class="Function"
+Prototype="int SetVelocimetroCustomer_DIAG(int kmh, int berco);"
+
+[LerStatus_LiveKey]
+Class="Function"
+Prototype="int LerStatus_LiveKey(int berco);"
+
+[Ler_ECU_ID]
+Class="Function"
+Prototype="int Ler_ECU_ID(int berco);"
+
+[Gravar_ECU_ID]
+Class="Function"
+Prototype="int Gravar_ECU_ID(int berco);"
+
+[Gravar_Unlock_Key]
+Class="Function"
+Prototype="int Gravar_Unlock_Key(int berco);"
+
+[Gravar_Master_Key]
+Class="Function"
+Prototype="int Gravar_Master_Key(int berco);"
+
+[CarregaResp_LiveKey]
+Class="Function"
+Prototype="int CarregaResp_LiveKey(int berco);"
+
+[Gravar_General_Key]
+Class="Function"
+Prototype="int Gravar_General_Key(SERVICO_DIAG servico_diag, int berco);"
+
+[Ler_toda_NVM]
+Class="Function"
+Prototype="int Ler_toda_NVM(int berco);"
+
+[Ler_Table_DataWord]
+Class="Function"
+Prototype="int Ler_Table_DataWord(ITEM_CALIB_TABLE item, unsigned int *item_val, int delay_command, int berco);"
+
+[Esc_Table_DataWord]
+Class="Function"
+Prototype="int Esc_Table_DataWord(ITEM_CALIB_TABLE item, unsigned int item_val, int berco);"
+
+[Ret_endereco_item_cal_table]
+Class="Function"
+Prototype="unsigned long Ret_endereco_item_cal_table(ITEM_CALIB_TABLE item, int berco);"
+
+[Ler_BytesNVM_Diag]
+Class="Function"
+Prototype="int Ler_BytesNVM_Diag(unsigned long add_init, unsigned char quantos_bytes, int delay_command, int berco);"
+
+[Gravar_BytesNVM_Diag]
+Class="Function"
+Prototype="int Gravar_BytesNVM_Diag(unsigned long add_init, unsigned char quantos_bytes, int berco, int table_data);"
+
+[VerifCondicaoServicoDiag]
+Class="Function"
+Prototype="int VerifCondicaoServicoDiag(MODO_DIAGNOSTICO modo_diag_correto, int berco, int delay_uir);"
+
+[EnterSleepMode_Diag]
+Class="Function"
+Prototype="int EnterSleepMode_Diag(int berco);"
+
+[Enable_gauge_Diag]
+Class="Function"
+Prototype="int Enable_gauge_Diag(int valor, int berco);"
+
+[CorrigirChecksum_Diag]
+Class="Function"
+Prototype="int CorrigirChecksum_Diag(int berco);"
+
+[Whatch_dog_test_Diag]
+Class="Function"
+Prototype="int Whatch_dog_test_Diag(int berco);"
+
+[ECU_reset_Diag]
+Class="Function"
+Prototype="int ECU_reset_Diag(int berco);"
+
+[ReturnPointersStop_Diag]
+Class="Function"
+Prototype="int ReturnPointersStop_Diag(int berco, int apenas_10_graus);"
+
+[Flip_Detect_Diag]
+Class="Function"
+Prototype="int Flip_Detect_Diag(int qual_gauge, int zerar_contador, int flip_detected, int berco);"
+
+[EnterPointerPlacMode_Diag]
+Class="Function"
+Prototype="int EnterPointerPlacMode_Diag(int berco);"
+
+[Programar_MEC_Diag]
+Class="Function"
+Prototype="int Programar_MEC_Diag(int berco);"
+
+[Programar_MEC_Servico_Diag]
+Class="Function"
+Prototype="int Programar_MEC_Servico_Diag(int berco);"
+
+[Programar_PN_Diag]
+Class="Function"
+Prototype="int Programar_PN_Diag(unsigned long customer_pn, int berco);"
+
+[Programar_MTC_Diag]
+Class="Function"
+Prototype="int Programar_MTC_Diag(int berco);"
+
+[Display_pattern_CAN]
+Class="Function"
+Prototype="int Display_pattern_CAN(PADRAO_DISPLAY pattern, int berco);"
+
+[Indica_comm_CAN_OK]
+Class="Function"
+Prototype="void Indica_comm_CAN_OK(int berco);"
+
+[Indica_comm_CAN_Not_OK]
+Class="Function"
+Prototype="int Indica_comm_CAN_Not_OK();"
+
+[set_cam_bit]
+Class="Function"
+Prototype="int set_cam_bit(EX_CAN_MSG *b_m, int can_id, int can_bit, int acao);"
+
+[Erros_CAN]
+Class="Function"
+Prototype="int Erros_CAN();"
+
+[ResetaBytesEnvio_CAN]
+Class="Function"
+Prototype="void ResetaBytesEnvio_CAN(int berco);"
+
+[ResetaBytesResposta_CAN]
+Class="Function"
+Prototype="void ResetaBytesResposta_CAN(int berco);"
+
+[Reseta_MensDiag]
+Class="Function"
+Prototype="void Reseta_MensDiag(int berco);"
+
+[LoadBytes_LiveKey]
+Class="Function"
+Prototype="int LoadBytes_LiveKey(SERVICO_DIAG servico_diag, int berco);"
+
+[LerMens_SysBkUpPwrMd]
+Class="Function"
+Prototype="int LerMens_SysBkUpPwrMd(int berco, int *configurado);"
+
+[GravaSequencia_general_keys]
+Class="Function"
+Prototype="int GravaSequencia_general_keys(int berco);"
+
+[Modo_manual_general_key]
+Class="Function"
+Prototype="int Modo_manual_general_key(SERVICO_DIAG item);"
+
+[F_read_VPPS]
+Class="Function"
+Prototype="int F_read_VPPS(int berco, char *VPPS);"
+
+[F_write_VPPS]
+Class="Function"
+Prototype="int F_write_VPPS(int berco, char *VPPS);"
+
+[F_read_DUNS]
+Class="Function"
+Prototype="int F_read_DUNS(int berco, char *DUNS);"
+
+[F_write_DUNS]
+Class="Function"
+Prototype="int F_write_DUNS(int berco, char *DUNS);"
+

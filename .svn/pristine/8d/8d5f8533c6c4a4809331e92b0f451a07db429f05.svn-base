@@ -1,0 +1,78 @@
+CCFLAGS = -g ;
+HDRS = 	"i:\\Vision National\\Libs\\include"
+	"i:\\VisionNational\\Libs\\include"
+	"e:\\SW TFCP - GM-Gem\\TFCP GM-Gem"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+LOCATE on "Adm Equip.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Auto OP090 GM-GEM.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Auxiliar OP090 GM-GEM.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "base64.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "bd-support.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Callbacks GM-Gem.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Callbacks OP090 GM-GEM.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "CAN GM-Gem.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "CAN GM-Gem.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "CIMSockets.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "CIMSockets.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "cvixml.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "CyberXML.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "CyberXML.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "DAQ_MX.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Diag GM-Gem.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Global Error Tracking.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Main OP090 GM-GEM.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Main OP090 GM-GEM.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Manual OP090 GM-GEM.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Master_e_Negative_Samples.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Master_e_Negative_Samples.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "National_USB_DAQ.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "niModInstCustCtrl.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "padrao.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Periodicidade.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "SenhaParametros.h" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Sistema OP090 GM-GEM.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+LOCATE on "Testes OP090 GM-GEM.c" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem" ;
+Object "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" : "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\CIMSockets.c" ;
+FILENUM on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" = 1 ;
+DEFPROTS on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj.cvidefprots" ;
+OUTFILE on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj.out" ;
+PrjObjects += "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" ;
+Object "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" : "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvixml.c" ;
+FILENUM on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" = 2 ;
+DEFPROTS on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj.cvidefprots" ;
+OUTFILE on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj.out" ;
+PrjObjects += "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" ;
+Object "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" : "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\msxml.c" ;
+FILENUM on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" = 3 ;
+DEFPROTS on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj.cvidefprots" ;
+OUTFILE on "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" = "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj.out" ;
+PrjObjects += "e:\\SW TFCP - GM-Gem\\TFCP GM-Gem\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" ;
+Depends all : $(PrjObjects) ;

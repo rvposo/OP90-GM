@@ -1,0 +1,503 @@
+[Workspace Header]
+Version = 1501
+Pathname = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/TFCP -GM - Gem.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2015"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2015"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "TFCP -GM - Gem.prj"
+Drag Bar Left = 190
+Window Top = 50
+Window Left = 43
+Window Bottom = 889
+Window Right = 1191
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 6
+Window Confinement Region Enabled = True
+MainColumnWidth = 173
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1501
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/CIMSockets.fp"
+File Type = "Function Panel"
+Disk Date = 3507125334
+In Projects = "1,"
+
+[File 0002]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/cvixml.fp"
+File Type = "Function Panel"
+Disk Date = 3621262996
+In Projects = "1,"
+
+[File 0003]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/msxml.fp"
+File Type = "Function Panel"
+Disk Date = 3621262996
+In Projects = "1,"
+
+[File 0004]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Main OP090 GM-GEM.c"
+File Type = "CSource"
+Disk Date = 3659370943
+In Projects = "1,"
+Window Top = 57
+Window Left = 324
+Window Z-Order = 5
+Source Window State = "1,1557,1557,1557,36,51,36,0,3,142,0,0,0,0,0,47,1525,0,1557,51,639,1210,1,0,"
+Breakpoint 0001 = "596,0,enabled,"
+Breakpoint 0002 = "1309,0,enabled,"
+Breakpoint 0003 = "1489,0,enabled,"
+
+[File 0005]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/National_USB_DAQ.c"
+File Type = "CSource"
+Disk Date = 3642753872
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,546,0,558,8,349,715,1,0,"
+Breakpoint 0001 = "866,0,enabled,"
+
+[File 0006]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/CAN GM-Gem.c"
+File Type = "CSource"
+Disk Date = 3653212416
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,5429,5429,5429,32,53,53,1,0,0,0,0,0,0,0,0,5360,0,5384,39,349,715,0,0,"
+Breakpoint 0001 = "5460,0,enabled,"
+Breakpoint 0002 = "5463,0,enabled,"
+Breakpoint 0003 = "5484,0,enabled,"
+Breakpoint 0004 = "6654,0,enabled,"
+
+[File 0007]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Testes OP090 GM-GEM.c"
+File Type = "CSource"
+Disk Date = 3660035801
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 2
+Source Window State = "1,518,518,518,0,114,114,1,0,92,0,0,0,0,0,33,482,0,518,67,465,805,1,0,"
+Breakpoint 0001 = "711,0,enabled,"
+Breakpoint 0002 = "4247,0,enabled,"
+Line Tags = "2042,"
+
+[File 0008]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Sistema OP090 GM-GEM.c"
+File Type = "CSource"
+Disk Date = 3656932896
+In Projects = "1,"
+Window Top = 31
+Window Left = 90
+Window Z-Order = 3
+Source Window State = "1,91,91,91,45,63,63,1,0,95,0,0,0,0,0,51,1444,4,1469,4,690,828,1,0,"
+Breakpoint 0001 = "1235,0,enabled,"
+
+[File 0009]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/CyberXML.c"
+File Type = "CSource"
+Disk Date = 3623234252
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,282,282,282,4,17,17,0,0,0,0,0,0,0,0,0,298,0,305,38,349,715,1,0,"
+Breakpoint 0001 = "310,0,enabled,"
+
+[File 0010]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Auxiliar OP090 GM-GEM.c"
+File Type = "CSource"
+Disk Date = 3651992338
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 6
+Source Window State = "1,497,497,497,33,34,33,1,0,80,0,0,0,0,0,28,21,0,351,37,397,715,1,0,"
+
+[File 0011]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Main OP090 GM-GEM.h"
+File Type = "Include"
+Disk Date = 3660031561
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Window Z-Order = 1
+Source Window State = "1,0,0,0,0,0,0,0,0,127,0,0,0,0,0,53,0,0,0,0,349,715,1,0,"
+
+[File 0012]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Master_e_Negative_Samples.c"
+File Type = "CSource"
+Disk Date = 3642753818
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,25,0,0,0,0,349,715,1,0,"
+
+[File 0013]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Auto OP090 GM-GEM.uir"
+File Type = "User Interface Resource"
+Disk Date = 3651837434
+In Projects = "1,"
+Window Top = 95
+Window Left = 34
+Window Height = 596
+Window Width = 1004
+
+[File 0014]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Diag GM-Gem.uir"
+File Type = "User Interface Resource"
+Disk Date = 3644596838
+In Projects = "1,"
+Window Top = 250
+Window Left = 55
+Window Height = 397
+Window Width = 683
+
+[File 0015]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Manual OP090 GM-GEM.uir"
+File Type = "User Interface Resource"
+Disk Date = 3619625838
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Window Height = 284
+Window Width = 659
+
+[File 0016]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Mensagens.uir"
+File Type = "User Interface Resource"
+Disk Date = 3567650222
+In Projects = "1,"
+Window Top = 188
+Window Left = 90
+Window Height = 349
+Window Width = 715
+
+[File 0017]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/padrao.uir"
+File Type = "User Interface Resource"
+Disk Date = 3640803200
+In Projects = "1,"
+Window Top = 126
+Window Left = 58
+Window Height = 397
+Window Width = 683
+
+[File 0018]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Senha.uir"
+File Type = "User Interface Resource"
+Disk Date = 3599223790
+In Projects = "1,"
+
+[File 0019]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/base64.c"
+File Type = "CSource"
+Disk Date = 3621262996
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,0,51,26,349,715,1,0,"
+
+[File 0020]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Callbacks GM-Gem.c"
+File Type = "CSource"
+Disk Date = 3652033198
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Source Window State = "1,24,24,24,20,21,20,1,0,0,0,0,0,0,0,0,3419,0,3427,21,284,523,0,0,"
+
+[File 0021]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Callbacks OP090 GM-GEM.c"
+File Type = "CSource"
+Disk Date = 3652033198
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,977,994,977,0,8160,35,1,0,0,0,0,0,0,0,0,791,0,801,20,349,715,1,0,"
+
+[File 0022]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/CIMSockets.c"
+File Type = "CSource"
+Disk Date = 3507125334
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,0,0,"
+
+[File 0023]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/cvixml.c"
+File Type = "CSource"
+Disk Date = 3621262996
+In Projects = "1,"
+Window Top = 212
+Window Left = 106
+Source Window State = "1,372,372,372,13,20,20,0,0,0,0,0,0,0,0,0,394,0,426,0,349,715,0,0,"
+
+[File 0024]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Global Error Tracking.c"
+File Type = "CSource"
+Disk Date = 3606893236
+In Projects = "1,"
+Window Top = 32
+Window Left = 10
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,39,35,349,715,1,0,"
+
+[File 0025]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Adm Equip.h"
+File Type = "Include"
+Disk Date = 3615381134
+In Projects = "1,"
+Window Top = 152
+Window Left = 74
+Source Window State = "1,16,16,16,11,16,16,1,0,0,0,0,0,0,0,0,0,0,23,26,323,715,1,0,"
+
+[File 0026]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Auto OP090 GM-GEM.h"
+File Type = "Include"
+Disk Date = 3651837434
+In Projects = "1,"
+Window Top = 182
+Window Left = 90
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,0,87,33,349,635,1,0,"
+
+[File 0027]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/bd-support.h"
+File Type = "Include"
+Disk Date = 3641456548
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Source Window State = "1,27,27,27,4,15,15,0,0,0,0,0,0,0,0,0,12,0,22,11,297,715,1,0,"
+
+[File 0028]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/CAN GM-Gem.h"
+File Type = "Include"
+Disk Date = 3653212472
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Source Window State = "1,478,478,478,4,17,17,1,0,0,0,0,0,0,0,0,466,0,477,33,349,555,0,0,"
+
+[File 0029]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/CIMSockets.h"
+File Type = "Include"
+Disk Date = 3507125334
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0030]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/CyberXML.h"
+File Type = "Include"
+Disk Date = 3621262996
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0031]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/DAQ_MX.h"
+File Type = "Include"
+Disk Date = 3606565708
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Source Window State = "1,43,43,43,8,23,23,1,3,0,0,0,0,0,0,0,31,0,43,8,397,683,0,0,"
+
+[File 0032]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Diag GM-Gem.h"
+File Type = "Include"
+Disk Date = 3644596838
+In Projects = "1,"
+Window Top = 95
+Window Left = 42
+Source Window State = "1,24,24,24,9,36,36,0,0,0,0,0,0,0,0,0,0,0,21,32,349,715,1,0,"
+
+[File 0033]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Manual OP090 GM-GEM.h"
+File Type = "Include"
+Disk Date = 3619625838
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+
+[File 0034]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Master_e_Negative_Samples.h"
+File Type = "Include"
+Disk Date = 3642754448
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,40,40,40,28,49,49,1,0,0,0,0,0,0,0,0,28,0,40,28,349,715,1,0,"
+
+[File 0035]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/niModInstCustCtrl.h"
+File Type = "Include"
+Disk Date = 3603959330
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0036]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/padrao.h"
+File Type = "Include"
+Disk Date = 3640803200
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0037]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Periodicidade.h"
+File Type = "Include"
+Disk Date = 3603959330
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0038]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/SenhaParametros.h"
+File Type = "Include"
+Disk Date = 3599229062
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0039]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Adm Equip.lib"
+File Type = "Library"
+Disk Date = 3615381152
+In Projects = "1,"
+
+[File 0040]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/bd-support.lib"
+File Type = "Library"
+Disk Date = 3641481786
+In Projects = "1,"
+
+[File 0041]
+Path = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/SenhaParametros.lib"
+File Type = "Library"
+Disk Date = 3599232540
+In Projects = "1,"
+
+[Tab Order]
+Tab 0001 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Auxiliar OP090 GM-GEM.c"
+Tab 0002 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Main OP090 GM-GEM.c"
+Tab 0003 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Master_e_Negative_Samples.c"
+Tab 0004 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Main OP090 GM-GEM.h"
+Tab 0005 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Sistema OP090 GM-GEM.c"
+Tab 0006 = "/e/SW TFCP - GM-Gem/TFCP GM-Gem - 2.8/Testes OP090 GM-GEM.c"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

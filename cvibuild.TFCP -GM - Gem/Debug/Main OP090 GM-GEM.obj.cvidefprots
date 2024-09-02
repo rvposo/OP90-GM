@@ -1,0 +1,188 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char **argv);"
+
+[Atualiza_Manual]
+Class="Function"
+Prototype="void Atualiza_Manual();"
+
+[InicializaMaquina]
+Class="Function"
+Prototype="int InicializaMaquina();"
+
+[Verifica_Barcodes]
+Class="Function"
+Prototype="int Verifica_Barcodes(int berco);"
+
+[InicializaPortasSeriais]
+Class="Function"
+Prototype="int InicializaPortasSeriais(int berco);"
+
+[SetMensAuto_ON]
+Class="Function"
+Prototype="void SetMensAuto_ON(char *mens1, int berco);"
+
+[SetMensAutoAllOFF]
+Class="Function"
+Prototype="void SetMensAutoAllOFF(char *mens1, char *mens2, char *mens3, int berco);"
+
+[CircuitosSeguranca]
+Class="Function"
+Prototype="int CircuitosSeguranca(int testar_consistencia);"
+
+[HomePosition]
+Class="Function"
+Prototype="int HomePosition(char *mens_falha);"
+
+[PrintMensWarning]
+Class="Function"
+Prototype="void PrintMensWarning(ALARME_SOM alarme, int berco);"
+
+[Ativa_Leitor]
+Class="Function"
+Prototype="int Ativa_Leitor(int berco);"
+
+[VerificaSerialScanner]
+Class="Function"
+Prototype="int VerificaSerialScanner(int tamanho_barcode, int berco);"
+
+[ProntoParaTeste]
+Class="Function"
+Prototype="void ProntoParaTeste();"
+
+[Inicializar_CircuitosSeguranca]
+Class="Function"
+Prototype="int Inicializar_CircuitosSeguranca(int testar_consistencia);"
+
+[FuncRejeitado]
+Class="Function"
+Prototype="int FuncRejeitado(char *Rodape, char *mensagem_teste, int berco);"
+
+[Finaliza_Loop_Principal]
+Class="Function"
+Prototype="void Finaliza_Loop_Principal();"
+
+[Thread_CAN]
+Class="Function"
+Prototype="int Thread_CAN(void *berco);"
+
+[CicloAutomatico]
+Class="Function"
+Prototype="int CicloAutomatico(void *qual_berco);"
+
+[LeBarcode]
+Class="Function"
+Prototype="int LeBarcode(int tipo_leitura, int berco);"
+
+[SetEmDebug]
+Class="Function"
+Prototype="int SetEmDebug(int berco);"
+
+[CarregaTabela]
+Class="Function"
+Prototype="int CarregaTabela(int berco);"
+
+[ResetBarcode]
+Class="Function"
+Prototype="void ResetBarcode(int bcr_enditem_pronto, int berco);"
+
+[CarregaArq_CFG]
+Class="Function"
+Prototype="int CarregaArq_CFG(int berco);"
+
+[DefModel]
+Class="Function"
+Prototype="int DefModel(char *prefixo, int tamanho_barcode, int tipo_leit, int berco);"
+
+[ColetaDados]
+Class="Function"
+Prototype="void ColetaDados(int Max_Test, int berco);"
+
+[MoveIn_Cim]
+Class="Function"
+Prototype="int MoveIn_Cim(int berco);"
+
+[MoveOut_Build_Cim]
+Class="Function"
+Prototype="void MoveOut_Build_Cim(char *prefixo, double Res, int Rej, char *Test, int berco);"
+
+[PresetaTeste]
+Class="Function"
+Prototype="int PresetaTeste(int berco);"
+
+[RetornaMovimentos]
+Class="Function"
+Prototype="int RetornaMovimentos(int testar_consistencia, char *mens_falha);"
+
+[MensagensAuto]
+Class="Function"
+Prototype="void MensagensAuto();"
+
+[ApresentaImagemInstrucao]
+Class="Function"
+Prototype="void ApresentaImagemInstrucao();"
+
+[AdicionaImagemInstrucao]
+Class="Function"
+Prototype="void AdicionaImagemInstrucao(int ordem_apresentacao, char *nome_imagem, int berco);"
+
+[InicializaCIM]
+Class="Function"
+Prototype="int InicializaCIM();"
+
+[Reconect_CIM]
+Class="Function"
+Prototype="int Reconect_CIM();"
+
+[Zera]
+Class="Function"
+Prototype="void Zera();"
+
+[SolicitaAtualizarTabela]
+Class="Function"
+Prototype="int SolicitaAtualizarTabela();"
+
+[AtualizaFTT]
+Class="Function"
+Prototype="void AtualizaFTT();"
+
+[VerificaExcecoesRetornaMovimentos]
+Class="Function"
+Prototype="int VerificaExcecoesRetornaMovimentos(int *resp, char *mens_falha);"
+
+[LoopPrincipal]
+Class="Function"
+Prototype="int LoopPrincipal();"
+
+[Foto_Display_Diag]
+Class="Function"
+Prototype="int Foto_Display_Diag(int modelo_display, int pattern);"
+
+[ModelosCallback]
+Class="Function"
+Prototype="int ModelosCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ReadIndexFile]
+Class="Function"
+Prototype="int ReadIndexFile();"
+
+[ReadChoicedIndexFile]
+Class="Function"
+Prototype="int ReadChoicedIndexFile();"
+
+[AtualizaDadosModelo]
+Class="Function"
+Prototype="int AtualizaDadosModelo();"
+
+[Atualiza_Tab_da_rede]
+Class="Function"
+Prototype="int Atualiza_Tab_da_rede();"
+
+[LeIndiceArquivo]
+Class="Function"
+Prototype="int LeIndiceArquivo();"
+
+[LeEscolheIndiceArquivo]
+Class="Function"
+Prototype="int LeEscolheIndiceArquivo();"
+

@@ -1,0 +1,37 @@
+GM , 21/08/2018  - CLUSTER GEM- TFCP
+097, Fecha porta p/ Inspeções Visuais                                  ,1         ,1        ,PASS   ,0
+100, Ligar vibração                                                    ,1         ,1        ,PASS   ,0
+001, Corrente Bateria Run/Crank ON (live)                              ,400       ,600      ,mA     ,0
+420, Tensão CAN Bus HI - Min  [NIS]                                    ,2.4       ,2.7      ,Volt   ,0
+425, Tensão CAN Bus HI - Máx  [NIS]                                    ,3.5       ,4.5      ,Volt   ,0
+430, Tensão CAN Bus LO - Min  [NIS]                                    ,0.8       ,1.5      ,Volt   ,0
+435, Tensão CAN Bus LO - Máx  [NIS]                                    ,2.4       ,2.7      ,Volt   ,0
+042, Operador visualiza VELOCIDADE 200 kM/h 8000 RPM                   ,1         ,1        ,PASS   ,0
+-041, Operador visualiza VELOCIDADE 80 kM/h 3000 RPM                    ,1         ,1        ,PASS   ,0
+040, Operador visualiza VELOCIDADE 0 kM/h  0 RPM                       ,1         ,1        ,PASS   ,0
+105, Entrar diag mode Visteon                                          ,1         ,1        ,PASS   ,0
+--1230,LeStatusByte                                                      ,1         ,1        ,PASS   ,0
+730, Verifica Versão do software & NVM                                 ,1         ,1        ,PASS   ,0
+121, Operador visualiza cosmetico TFT                                  ,1         ,1        ,PASS   ,0
+122, Operador visualiza cosmetico TACO                                 ,1         ,1        ,PASS   ,0
+123, Operador visualiza cosmetico VELO                                 ,1         ,1        ,PASS   ,0
+-003, Operador visualiza Telltales Ambar                                ,1         ,1        ,PASS   ,0
+-007, Operador visualiza Telltale Azul                                  ,1         ,1        ,PASS   ,0
+-009, Operador visualiza Telltales Vermelhos                            ,1         ,1        ,PASS   ,0
+-012, Operador visualiza Telltales Verdes                               ,1         ,1        ,PASS   ,0
+-015, Operador visualiza Telltales Brancos                              ,1         ,1        ,PASS   ,0
+017, Operador visualiza ALL Telltales ON                               ,1         ,1        ,PASS   ,0
+018, Operador visualiza ALL Telltales OFF                              ,1         ,1        ,PASS   ,0
+021, Operador visualiza padrão display seg 1                           ,1         ,1        ,PASS   ,0
+022, Operador visualiza padrão display seg 2                           ,1         ,1        ,PASS   ,0
+023, Operador visualiza padrão display seg 3                           ,1         ,1        ,PASS   ,0
+024, Operador visualiza padrão display seg 4                           ,1         ,1        ,PASS   ,0
+--------------------------- configura o cluster --------------------------------------------------------
+1180, Grava parametro MEC                                              ,1         ,1        ,PASS   ,0
+1190, Grava PN cliente                                                 ,1         ,1        ,PASS   ,0
+1200, Grava traceability                                               ,1         ,1        ,PASS   ,0
+1300, Grava VPPS                                                       ,1         ,1        ,PASS   ,0
+1301, Grava DUNS                                                       ,1         ,1        ,PASS   ,0
+101,  Desligar vibração                                                ,1         ,1        ,PASS   ,0
+098,  Abre porta                                                       ,1         ,1        ,PASS   ,0
+END

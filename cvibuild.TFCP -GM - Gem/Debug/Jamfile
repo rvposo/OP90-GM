@@ -1,0 +1,143 @@
+CCFLAGS = -g ;
+HDRS = 	"i:\\Vision National\\Libs\\include"
+	"i:\\VisionNational\\Libs\\include"
+	"e:\\TFCP GM-Gem_3.2.3 otimizacao de testes"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Adm Equip.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Auto OP090 GM-GEM.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Auxiliar OP090 GM-GEM.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "base64.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "bd-support.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Callbacks GM-Gem.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Callbacks OP090 GM-GEM.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "CAN GM-Gem.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "CAN GM-Gem.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "CIMSockets.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "CIMSockets.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "cvixml.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "CyberXML.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "CyberXML.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "DAQ_MX.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Diag GM-Gem.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Global Error Tracking.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Main OP090 GM-GEM.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Main OP090 GM-GEM.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Manual OP090 GM-GEM.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Master_e_Negative_Samples.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Master_e_Negative_Samples.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "National_USB_DAQ.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "niModInstCustCtrl.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "padrao.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Periodicidade.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "SenhaParametros.h" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Sistema OP090 GM-GEM.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+LOCATE on "Testes OP090 GM-GEM.c" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Auxiliar OP090 GM-GEM.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Auxiliar OP090 GM-GEM.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Auxiliar OP090 GM-GEM.obj" = 1 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Auxiliar OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Auxiliar OP090 GM-GEM.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Auxiliar OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Auxiliar OP090 GM-GEM.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Auxiliar OP090 GM-GEM.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\base64.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\base64.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\base64.obj" = 2 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\base64.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\base64.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\base64.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\base64.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\base64.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks GM-Gem.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Callbacks GM-Gem.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks GM-Gem.obj" = 3 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks GM-Gem.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks GM-Gem.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks GM-Gem.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks GM-Gem.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks GM-Gem.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks OP090 GM-GEM.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Callbacks OP090 GM-GEM.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks OP090 GM-GEM.obj" = 4 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks OP090 GM-GEM.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks OP090 GM-GEM.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Callbacks OP090 GM-GEM.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CAN GM-Gem.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\CAN GM-Gem.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CAN GM-Gem.obj" = 5 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CAN GM-Gem.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CAN GM-Gem.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CAN GM-Gem.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CAN GM-Gem.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CAN GM-Gem.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\CIMSockets.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" = 6 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CIMSockets.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvixml.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" = 7 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\cvixml.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CyberXML.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\CyberXML.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CyberXML.obj" = 8 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CyberXML.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CyberXML.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CyberXML.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CyberXML.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\CyberXML.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Global Error Tracking.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Global Error Tracking.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Global Error Tracking.obj" = 9 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Global Error Tracking.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Global Error Tracking.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Global Error Tracking.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Global Error Tracking.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Global Error Tracking.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Main OP090 GM-GEM.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Main OP090 GM-GEM.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Main OP090 GM-GEM.obj" = 10 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Main OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Main OP090 GM-GEM.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Main OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Main OP090 GM-GEM.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Main OP090 GM-GEM.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Master_e_Negative_Samples.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Master_e_Negative_Samples.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Master_e_Negative_Samples.obj" = 11 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Master_e_Negative_Samples.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Master_e_Negative_Samples.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Master_e_Negative_Samples.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Master_e_Negative_Samples.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Master_e_Negative_Samples.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\National_USB_DAQ.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\National_USB_DAQ.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\National_USB_DAQ.obj" = 12 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\National_USB_DAQ.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\National_USB_DAQ.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\National_USB_DAQ.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\National_USB_DAQ.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\National_USB_DAQ.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Sistema OP090 GM-GEM.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Sistema OP090 GM-GEM.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Sistema OP090 GM-GEM.obj" = 13 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Sistema OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Sistema OP090 GM-GEM.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Sistema OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Sistema OP090 GM-GEM.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Sistema OP090 GM-GEM.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Testes OP090 GM-GEM.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\Testes OP090 GM-GEM.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Testes OP090 GM-GEM.obj" = 14 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Testes OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Testes OP090 GM-GEM.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Testes OP090 GM-GEM.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Testes OP090 GM-GEM.obj.out" ;
+PrjObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\Testes OP090 GM-GEM.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\msxml.c" ;
+FILENUM on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" = 15 ;
+DEFPROTS on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj.cvidefprots" ;
+OUTFILE on "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" = "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj.out" ;
+InstrObjects += "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\msxml.obj" ;
+Object "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\resources.res" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\resources.in.rc" ;
+MainFromObjects "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\TFCP GM-Gem_dbg.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\TFCP GM-Gem_dbg.exe" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\link_options.txt" ;
+Depends "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\TFCP GM-Gem_dbg.exe" : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\resources.res" ;
+Depends all : "e:\\TFCP GM-Gem_3.2.3 otimizacao de testes\\cvibuild.TFCP -GM - Gem\\Debug\\TFCP GM-Gem_dbg.exe" ;

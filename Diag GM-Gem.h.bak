@@ -1,0 +1,435 @@
+/**************************************************************************/
+/* LabWindows/CVI User Interface Resource (UIR) Include File              */
+/*                                                                        */
+/* WARNING: Do not add to, delete from, or otherwise modify the contents  */
+/*          of this include file.                                         */
+/**************************************************************************/
+
+#include <userint.h>
+
+#ifdef __cplusplus
+    extern "C" {
+#endif
+
+     /* Panels and Controls: */
+
+#define  PANEL_INFO                       1
+#define  PANEL_INFO_PICTURE               2       /* control type: picture, callback function: (none) */
+#define  PANEL_INFO_COMMANDBUTTON         3       /* control type: command, callback function: CloseClusterInfoDescription */
+
+#define  TELA_DIAG                        2
+#define  TELA_DIAG_STATUS_ENTER_DIAG      2       /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_BOTAOFIMDIAG           3       /* control type: command, callback function: FimDiag */
+#define  TELA_DIAG_STARTDIAG_CUSTOMER     4       /* control type: command, callback function: StartDiag_Customer */
+#define  TELA_DIAG_STARTDIAG_VISTEON      5       /* control type: command, callback function: StartDiag_Visteon */
+#define  TELA_DIAG_DECORATION             6       /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_6           7       /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DADO_16                8       /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_15                9       /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_14                10      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_13                11      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_12                12      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_11                13      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_10                14      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_9                 15      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_8                 16      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_7                 17      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_6                 18      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_5                 19      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_4                 20      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_3                 21      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_2                 22      /* control type: string, callback function: (none) */
+#define  TELA_DIAG_BUT_LOW_FUEL           23      /* control type: pictButton, callback function: Diag_low_fuel */
+#define  TELA_DIAG_DIAG_TYRE_PRESSURE     24      /* control type: pictButton, callback function: Diag_tyre_pressure */
+#define  TELA_DIAG_DIAG_AUTOHOLD_GREEN    25      /* control type: pictButton, callback function: Diag_autohold_green */
+#define  TELA_DIAG_DIAG_AUTOHOLD_WHITE    26      /* control type: pictButton, callback function: Diag_autohold_white */
+#define  TELA_DIAG_DIAG_TRACKLEAD_AMBER   27      /* control type: pictButton, callback function: Diag_tracklead_amber */
+#define  TELA_DIAG_DIAG_TRACKLEAD_GREEN   28      /* control type: pictButton, callback function: Diag_tracklead_green */
+#define  TELA_DIAG_DIAG_LINE_K_AMBER      29      /* control type: pictButton, callback function: Diag_line_keeper_amber */
+#define  TELA_DIAG_DIAG_LINE_K_GREEN      30      /* control type: pictButton, callback function: Diag_line_keeper_green */
+#define  TELA_DIAG_DIAG_FRONT_FOG         31      /* control type: pictButton, callback function: Diag_FrontFog */
+#define  TELA_DIAG_DIAG_CRUISE_ON         32      /* control type: pictButton, callback function: Diag_CruiseON */
+#define  TELA_DIAG_DIAG_CRUISE_ENGAGED    33      /* control type: pictButton, callback function: Diag_CruiseEngaged */
+#define  TELA_DIAG_LED_LOW_FUEL           34      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DIAG_SERV_VEH_SOON     35      /* control type: pictButton, callback function: Diag_service_vehicle_soon */
+#define  TELA_DIAG_DIAG_TRACTION_CONTROL  36      /* control type: pictButton, callback function: Diag_traction_control */
+#define  TELA_DIAG_DIAG_CLUTCH_START      37      /* control type: pictButton, callback function: Diag_clutch_to_start */
+#define  TELA_DIAG_DIAG_SECURITY          38      /* control type: pictButton, callback function: Diag_security */
+#define  TELA_DIAG_DECORATION_119         39      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_BUT_HI_TEMP_RED        40      /* control type: pictButton, callback function: Diag_hi_temp */
+#define  TELA_DIAG_DIAG_ESC_SERVICE       41      /* control type: pictButton, callback function: Diag_Esc_Service */
+#define  TELA_DIAG_DIAG_ESC_OFF           42      /* control type: pictButton, callback function: Diag_Esc_Off */
+#define  TELA_DIAG_DIAG_MPH               43      /* control type: pictButton, callback function: Diag_mph */
+#define  TELA_DIAG_DIAG_KMH               44      /* control type: pictButton, callback function: Diag_kmh */
+#define  TELA_DIAG_AUTOHOLD_GREEN         45      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DIAG_GLOW              46      /* control type: pictButton, callback function: Diag_glow_plug */
+#define  TELA_DIAG_AUTOHOLD_WHITE         47      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_161         48      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_PEDESTRIAN        49      /* control type: pictButton, callback function: Diag_pedestrian */
+#define  TELA_DIAG_TRACKLEAD_AMBER        50      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_162         51      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_PARK_ASSIST       52      /* control type: pictButton, callback function: Diag_park_asist */
+#define  TELA_DIAG_TRACKLEAD_GREEN        53      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_159         54      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_EPS               55      /* control type: pictButton, callback function: Diag_EPS */
+#define  TELA_DIAG_LINE_K_AMBER           56      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_160         57      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_HI_TEMP                58      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_LINE_K_GREEN           59      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_158         60      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_SET_MAN_BERCO          61      /* control type: ring, callback function: Get_manual_num_berco_diag */
+#define  TELA_DIAG_DECORATION_135         62      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_FRONT_FOG              63      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_157         64      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_CRUISE_ON              65      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_141         66      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_CRUISE_ENGAGED         67      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DIAG_LIGHT_ON          68      /* control type: pictButton, callback function: Diag_light_on */
+#define  TELA_DIAG_DIAG_HIGH_BEAM         69      /* control type: pictButton, callback function: Diag_hi_beam */
+#define  TELA_DIAG_SERV_VEH_SOON          70      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DIAG_BRAKE             71      /* control type: pictButton, callback function: Diag_brake */
+#define  TELA_DIAG_TRACTION_CONTROL       72      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_140         73      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_CLUTCH                 74      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_151         75      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_SECURITY               76      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_150         77      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_139         78      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_SERV_ENG_SOON     79      /* control type: pictButton, callback function: Diag_service_engine_soon */
+#define  TELA_DIAG_DECORATION_148         80      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_122         81      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_MPH                    82      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_ESC_SERVICE            83      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_KMH                    84      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_GLOW                   85      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_PEDESTRIAN             86      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_ESC_OFF                87      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_PARK_ASSIST            88      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_LIGHT_ON               89      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_EPS                    90      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_HIGH_BEAM              91      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DIAG_AIRBAG            92      /* control type: pictButton, callback function: Diag_airbag */
+#define  TELA_DIAG_LED_BRAKE              93      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_155         94      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_143         95      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_154         96      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_146         97      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_SERV_ENG_SOON          98      /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_153         99      /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_156         100     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_SERV_EL_PB        101     /* control type: pictButton, callback function: Diag_ServiceEletricParkBrake */
+#define  TELA_DIAG_DECORATION_145         102     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_152         103     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_142         104     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_ABS               105     /* control type: pictButton, callback function: Diag_ABS */
+#define  TELA_DIAG_DECORATION_123         106     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_124         107     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_PICTURE_3              108     /* control type: picture, callback function: (none) */
+#define  TELA_DIAG_DECORATION_125         109     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_SE_PBRAKE              110     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_LED_AIRBAG             111     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_LED_ABS                112     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_138         113     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_127         114     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_128         115     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_BUT_REAR_FOG           116     /* control type: pictButton, callback function: Diag_rear_fog */
+#define  TELA_DIAG_TYRE_PRESSURE          117     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_113         118     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_PASS_SEATBELT     119     /* control type: pictButton, callback function: Diag_passeng_seatbelt */
+#define  TELA_DIAG_DIAG_PARKING_BRAKE     120     /* control type: pictButton, callback function: Diag_Parking_brake */
+#define  TELA_DIAG_DIAG_SEAT_BELT         121     /* control type: pictButton, callback function: Diag_SeatBelt */
+#define  TELA_DIAG_DIAG_OIL               122     /* control type: pictButton, callback function: Diag_oil */
+#define  TELA_DIAG_BUT_RIGHT              123     /* control type: pictButton, callback function: Diag_right_turn */
+#define  TELA_DIAG_LED_REAR_FOG           124     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_PASS_SEATBELT          125     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_BUT_LEFT               126     /* control type: pictButton, callback function: Diag_left_turn */
+#define  TELA_DIAG_PARKING_BRAKE          127     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_116         128     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_149         129     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_SEAT_BELT              130     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_147         131     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_OIL_PRESSURE           132     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_LED_RIGHT_TURN         133     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DECORATION_144         134     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_LED_LEFT_TURN          135     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_DIAG_BATTERY           136     /* control type: pictButton, callback function: Diag_Battery */
+#define  TELA_DIAG_DECORATION_109         137     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_110         138     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_111         139     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_LALTERNADOR            140     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_TABLE_ITEM_VALUE       141     /* control type: string, callback function: (none) */
+#define  TELA_DIAG_DADO_1                 142     /* control type: string, callback function: (none) */
+#define  TELA_DIAG_SERVICO_STATUS         143     /* control type: LED, callback function: (none) */
+#define  TELA_DIAG_CLUSTER_INFO_DESCRIPT  144     /* control type: command, callback function: Diag_cluster_info_description */
+#define  TELA_DIAG_CLUSTER_INFO           145     /* control type: command, callback function: Diag_cluster_info */
+#define  TELA_DIAG_CLEAR_DADOS_BYTES      146     /* control type: command, callback function: Diag_clear_bytes_NVM */
+#define  TELA_DIAG_GRAVAR_NVM             147     /* control type: command, callback function: Diag_gravar_bytes_NVM */
+#define  TELA_DIAG_TEXTMSG_6              148     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_22             149     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_5              150     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_LER_NVM                151     /* control type: command, callback function: LeNVM_Diag */
+#define  TELA_DIAG_DECORATION_137         152     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_RESP_CAN               153     /* control type: textBox, callback function: (none) */
+#define  TELA_DIAG_DECORATION_98          154     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_BOTAOFIM               155     /* control type: command, callback function: Fim_Tela_Diag */
+#define  TELA_DIAG_CLEAR_COM_CAN          156     /* control type: command, callback function: Clear_Comm_CAN */
+#define  TELA_DIAG_TEXTMSG_8              157     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TIMER_2                158     /* control type: timer, callback function: Timer_2 */
+#define  TELA_DIAG_FILTRAR_N_DIAG         159     /* control type: radioButton, callback function: Filtrar_not_diag_CAN */
+#define  TELA_DIAG_IMP_COMM_CAN           160     /* control type: radioButton, callback function: Mostrar_Comm_CAN */
+#define  TELA_DIAG_DIAG_ILLUM_TELLTALE    161     /* control type: numeric, callback function: Diag_tt_illumination */
+#define  TELA_DIAG_DIAG_LCD_BACKLIGHT     162     /* control type: numeric, callback function: Diag_lcd_backlight */
+#define  TELA_DIAG_DIAG_POINT_BACKLIGHT   163     /* control type: numeric, callback function: Diag_pointers_backlight */
+#define  TELA_DIAG_DIAG_GAUGE_BACKLIGHT   164     /* control type: numeric, callback function: Diag_gauge_backlight */
+#define  TELA_DIAG_READ_PASS_ST_IS2_OUT   165     /* control type: textButton, callback function: Diag_read_passive_start_IS2_out */
+#define  TELA_DIAG_READ_PASS_ST_IS1_OUT   166     /* control type: textButton, callback function: Diag_read_passive_start_IS1_out */
+#define  TELA_DIAG_READ_PASS_ST_ACC_OUT   167     /* control type: textButton, callback function: Diag_read_passive_start_acc_out */
+#define  TELA_DIAG_READ_PASS_ST_RUN_OUT   168     /* control type: textButton, callback function: Diag_read_passive_start_run_out */
+#define  TELA_DIAG_READ_FCA_DN_OUT        169     /* control type: textButton, callback function: Diag_read_FCA_DN_out */
+#define  TELA_DIAG_READ_FCA_OUT           170     /* control type: textButton, callback function: Diag_read_FCA_out */
+#define  TELA_DIAG_PASSIVE_START          171     /* control type: textButton, callback function: Diag_passive_start */
+#define  TELA_DIAG_DIC_ANALOG             172     /* control type: textButton, callback function: Diag_dic_analog */
+#define  TELA_DIAG_AIRBAG_ANALOG          173     /* control type: textButton, callback function: Diag_airbag_analog */
+#define  TELA_DIAG_BRAKE_ANALOG           174     /* control type: textButton, callback function: Diag_brake_analog */
+#define  TELA_DIAG_PARKING_ANALOG         175     /* control type: textButton, callback function: Diag_parking_analog */
+#define  TELA_DIAG_ABS_ANALOG             176     /* control type: textButton, callback function: Diag_abs_analog */
+#define  TELA_DIAG_ESC_ANALOG             177     /* control type: textButton, callback function: Diag_esc_analog */
+#define  TELA_DIAG_TIRE_PRESS_ANALOG      178     /* control type: textButton, callback function: Diag_tire_press_analog */
+#define  TELA_DIAG_LOW_FUEL_ANALOG        179     /* control type: textButton, callback function: Diag_low_fuel_analog */
+#define  TELA_DIAG_MONITOR_5V             180     /* control type: textButton, callback function: Diag_monitor_5v */
+#define  TELA_DIAG_PCB_TEMPERATURE        181     /* control type: textButton, callback function: Diag_pcb_temperature */
+#define  TELA_DIAG_BASE_STATUS            182     /* control type: textButton, callback function: Diag_base_status */
+#define  TELA_DIAG_MTC_STATUS             183     /* control type: textButton, callback function: Diag_MTC_status */
+#define  TELA_DIAG_PN_STATUS              184     /* control type: textButton, callback function: Diag_PN_status */
+#define  TELA_DIAG_MEC_STATUS             185     /* control type: textButton, callback function: Diag_MEC_status */
+#define  TELA_DIAG_ENABLE_GAUGE           186     /* control type: textButton, callback function: Diag_enable_gauge */
+#define  TELA_DIAG_SW_VERSION_INFORM      187     /* control type: textButton, callback function: Diag_sw_version */
+#define  TELA_DIAG_CRYSTAL_VERIFICATION   188     /* control type: textButton, callback function: Diag_crystal_verification */
+#define  TELA_DIAG_BATTERY_VOLTAGE        189     /* control type: textButton, callback function: Diag_battery_voltage */
+#define  TELA_DIAG_DIC_SWITCH             190     /* control type: textButton, callback function: Diag_dic_switch */
+#define  TELA_DIAG_WRITE_PASS_ST_ACC_OUT  191     /* control type: radioButton, callback function: Diag_write_passive_start_acc_out */
+#define  TELA_DIAG_TELLTALES_ALL_GREEN    192     /* control type: textButton, callback function: Telltales_all_green */
+#define  TELA_DIAG_TELLTALES_ALL_WHITE    193     /* control type: textButton, callback function: Telltales_all_white */
+#define  TELA_DIAG_TELLTALES_ALL          194     /* control type: textButton, callback function: Telltales_all */
+#define  TELA_DIAG_TELLTALES_ALL_BLUE     195     /* control type: textButton, callback function: Telltales_all_blue */
+#define  TELA_DIAG_TELLTALES_ALL_AMBER    196     /* control type: textButton, callback function: Telltales_all_amber */
+#define  TELA_DIAG_TELLTALES_ALL_RED      197     /* control type: textButton, callback function: Telltales_all_red */
+#define  TELA_DIAG_RUN_CRANK              198     /* control type: textButton, callback function: Diag_run_crank */
+#define  TELA_DIAG_WRITE_PASS_ST_RUN_OUT  199     /* control type: radioButton, callback function: Diag_write_passive_start_run_out */
+#define  TELA_DIAG_DECORATION_2           200     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_WRITE_FCA_DN_OUT       201     /* control type: radioButton, callback function: Diag_write_FCA_DN_out */
+#define  TELA_DIAG_SPLITTER               202     /* control type: splitter, callback function: (none) */
+#define  TELA_DIAG_WRITE_FCA_OUT          203     /* control type: radioButton, callback function: Diag_write_FCA_out */
+#define  TELA_DIAG_TEXTMSG                204     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_DECORATION_3           205     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_163         206     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_164         207     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_4           208     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_PROGRAMAR_MTC          209     /* control type: command, callback function: Diag_programar_MTC */
+#define  TELA_DIAG_MODELO_DISPLAY         210     /* control type: ring, callback function: (none) */
+#define  TELA_DIAG_PROGRAMAR_PN           211     /* control type: command, callback function: Diag_programar_PN */
+#define  TELA_DIAG_NUM_PADRAO             212     /* control type: ring, callback function: Diag_Padrao_display */
+#define  TELA_DIAG_TEXTMSG_10             213     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_23             214     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_11             215     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_PROGRAMAR_MEC          216     /* control type: command, callback function: Diag_programar_MEC */
+#define  TELA_DIAG_POINTER_PLAC_MODE      217     /* control type: command, callback function: Diag_PointerPlacementMode */
+#define  TELA_DIAG_WHATCH_DOG_TEST        218     /* control type: command, callback function: Diag_watch_dog_test */
+#define  TELA_DIAG_CORRIGIR_CHKSUM        219     /* control type: command, callback function: Diag_corrigir_checksum */
+#define  TELA_DIAG_ECU_RESET              220     /* control type: command, callback function: Diag_ecu_reset */
+#define  TELA_DIAG_SLEEP_MODE             221     /* control type: command, callback function: Diag_SleepMode */
+#define  TELA_DIAG_TEXTMSG_13             222     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_9              223     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_2              224     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_DECORATION_165         225     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_MTC_15                 226     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_14                 227     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_13                 228     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_12                 229     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_11                 230     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_10                 231     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_9                  232     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_8                  233     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_5                  234     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_6                  235     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_7                  236     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_3                  237     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_4                  238     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_2                  239     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_1                  240     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_MTC_0                  241     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_DECORATION_167         242     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_3              243     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_DECORATION_5           244     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_FOTO_DISPLAY           245     /* control type: picture, callback function: (none) */
+#define  TELA_DIAG_CUSTOMER_PN            246     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_DECORATION_166         247     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_4              248     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_12             249     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_PICTURE                250     /* control type: picture, callback function: (none) */
+#define  TELA_DIAG_DECORATION_170         251     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_VELO_EOL_VISTEON  252     /* control type: numeric, callback function: Diag_velocimetro_eol_visteon */
+#define  TELA_DIAG_DIAG_TACO_EOL_VISTEON  253     /* control type: numeric, callback function: Diag_tacometro_eol_visteon */
+#define  TELA_DIAG_DECORATION_171         254     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_168         255     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_173         256     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_172         257     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DECORATION_169         258     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_DIAG_VELO_CUSTOMER     259     /* control type: numeric, callback function: Diag_velocimetro_customer */
+#define  TELA_DIAG_DIAG_TACO_CUSTOMER     260     /* control type: numeric, callback function: Diag_tacometro_customer */
+#define  TELA_DIAG_TEXTMSG_14             261     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_16             262     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_15             263     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_18             264     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_17             265     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_19             266     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_20             267     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_21             268     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_MOVE_ABSOLUTO          269     /* control type: radioButton, callback function: (none) */
+#define  TELA_DIAG_TORQUE                 270     /* control type: ring, callback function: (none) */
+#define  TELA_DIAG_SPLITTER_2             271     /* control type: splitter, callback function: (none) */
+#define  TELA_DIAG_QUANTOS_BYTES          272     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_ADD_INICIAL            273     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_SALVAR_LOG_CAN         274     /* control type: command, callback function: SalvarLogsCAN */
+#define  TELA_DIAG_CALIBRACAO             275     /* control type: tree, callback function: (none) */
+#define  TELA_DIAG_PICTURE_2              276     /* control type: picture, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_24             277     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_GAUGE_TABLE_ITEM       278     /* control type: listBox, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_7              279     /* control type: textMsg, callback function: (none) */
+#define  TELA_DIAG_UPDATE_TABLE           280     /* control type: command, callback function: Diag_Update_table */
+#define  TELA_DIAG_DOWNLOAD_NVM           281     /* control type: command, callback function: Diag_Download_NVM */
+#define  TELA_DIAG_COMMANDBUTTON          282     /* control type: command, callback function: Teste_CMD */
+#define  TELA_DIAG_TESTE                  283     /* control type: numeric, callback function: (none) */
+#define  TELA_DIAG_DECORATION_7           284     /* control type: deco, callback function: (none) */
+#define  TELA_DIAG_TEXTMSG_25             285     /* control type: textMsg, callback function: (none) */
+
+
+     /* Control Arrays: */
+
+          /* (no control arrays in the resource file) */
+
+
+     /* Menu Bars, Menus, and Menu Items: */
+
+          /* (no menu bars in the resource file) */
+
+
+     /* Callback Prototypes: */
+
+int  CVICALLBACK Clear_Comm_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK CloseClusterInfoDescription(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_ABS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_abs_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_airbag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_airbag_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_autohold_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_autohold_white(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_base_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_Battery(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_battery_voltage(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_brake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_brake_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_clear_bytes_NVM(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_cluster_info(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_cluster_info_description(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_clutch_to_start(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_corrigir_checksum(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_CruiseEngaged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_CruiseON(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_crystal_verification(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_dic_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_dic_switch(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_Download_NVM(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_ecu_reset(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_enable_gauge(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_EPS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_esc_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_Esc_Off(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_Esc_Service(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_FrontFog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_gauge_backlight(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_glow_plug(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_gravar_bytes_NVM(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_hi_beam(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_hi_temp(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_kmh(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_lcd_backlight(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_left_turn(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_light_on(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_line_keeper_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_line_keeper_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_low_fuel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_low_fuel_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_MEC_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_monitor_5v(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_mph(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_MTC_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_oil(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_Padrao_display(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_park_asist(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_parking_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_Parking_brake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_passeng_seatbelt(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_passive_start(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_pcb_temperature(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_pedestrian(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_PN_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_PointerPlacementMode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_pointers_backlight(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_programar_MEC(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_programar_MTC(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_programar_PN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_read_FCA_DN_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_read_FCA_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_read_passive_start_acc_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_read_passive_start_IS1_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_read_passive_start_IS2_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_read_passive_start_run_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_rear_fog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_right_turn(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_run_crank(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_SeatBelt(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_security(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_service_engine_soon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_service_vehicle_soon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_ServiceEletricParkBrake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_SleepMode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_sw_version(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_tacometro_customer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_tacometro_eol_visteon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_tire_press_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_tracklead_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_tracklead_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_traction_control(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_tt_illumination(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_tyre_pressure(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_Update_table(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_velocimetro_customer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_velocimetro_eol_visteon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_watch_dog_test(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_write_FCA_DN_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_write_FCA_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_write_passive_start_acc_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Diag_write_passive_start_run_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Filtrar_not_diag_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Fim_Tela_Diag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK FimDiag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Get_manual_num_berco_diag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK LeNVM_Diag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Mostrar_Comm_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK SalvarLogsCAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK StartDiag_Customer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK StartDiag_Visteon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Telltales_all(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Telltales_all_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Telltales_all_blue(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Telltales_all_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Telltales_all_red(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Telltales_all_white(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Teste_CMD(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK Timer_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+
+
+#ifdef __cplusplus
+    }
+#endif

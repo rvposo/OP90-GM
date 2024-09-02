@@ -1,0 +1,1529 @@
+#include <windows.h>
+#include <ansi_c.h>
+#include <utility.h>
+#include <formatio.h>
+#include <mmsystem.h>
+
+#include <NIDAQmx.h> 
+
+#include "Mensagens.h"
+
+#include "cvixml.h"   
+#include "Main OP090 GM-GEM.h"
+
+#include "Auto OP090 GM-GEM.h"
+#include "CAN GM-Gem.h"
+#include "DAQ_MX.h"
+
+#include "Diag GM-Gem.h"
+
+      
+
+int          status;
+char         sensor; 
+double       Tempo_Ini ,  Tempo;
+
+//
+// Função: LeConfiguracoes()
+//
+int LeConfiguracoes(void)
+{
+	char
+		resposta[100],
+		configuracao[50],
+		tmp[90];
+	int
+		file,
+		i,
+		tamanho;
+
+	HW_present = ON; 
+	
+	/////////////// Le arquivo de configuração ///////////////
+	file = OpenFile( ARQ_CONFIG_MAQ, VAL_READ_WRITE, VAL_OPEN_AS_IS, VAL_ASCII );
+	if (file < 0)
+	{
+		MessagePopup ( " Erro Configuração", "Falha ao abrir arquivo de configuração." );
+		return -1;
+	}
+	for(i=0; i < 100; i++) //le até 100 linhas
+	{
+		if(ReadLine (file, tmp, 80)<0)//fim do arquivo
+			break;
+		strcpy (resposta, tmp);
+		tamanho = strlen(resposta);
+		if (!tamanho) continue; //continua no loop se string for vazia
+		StringUpperCase (resposta);
+		if(strcmp(resposta, "FIM") == 0)
+			break;
+		else if(strstr (resposta, "EM_DEBUG=")!= NULL)
+		{
+			CopyString (configuracao, 0, resposta, 9, 3);
+			Scan(configuracao, "%s>%s", configuracao);//elimina tab ou espaco apos a string
+			if(strcmp(configuracao, "ON") == 0)
+				em_debug = ON;
+			else
+				em_debug = OFF;
+		}
+		
+		else if (strstr (resposta, "CAN_DEFIN_NOME_1=") != NULL)
+		{
+			CopyString (can_defin[1].nome, 0, resposta, strlen("CAN_DEFIN_NOME_1="), 8);
+ 	   		Scan(can_defin[1].nome, "%s>%s", can_defin[1].nome);//elimina tab ou espaco apos a string
+		}
+		else if (strstr (resposta, "CAN_DEFIN_NOME_2=") != NULL)
+		{
+			CopyString (can_defin[2].nome, 0, resposta, strlen("CAN_DEFIN_NOME_2="), 8);
+ 	   		Scan(can_defin[2].nome, "%s>%s", can_defin[2].nome);//elimina tab ou espaco apos a string
+		}
+		else if (strstr (resposta, "CAN_DEFIN_NOME_3=") != NULL)
+		{
+			CopyString (can_defin[3].nome, 0, resposta, strlen("CAN_DEFIN_NOME_3="), 8);
+ 	   		Scan(can_defin[3].nome, "%s>%s", can_defin[3].nome);//elimina tab ou espaco apos a string
+		}
+		else if (strstr (resposta, "CAN_DEFIN_NOME_4=") != NULL)
+		{
+			CopyString (can_defin[4].nome, 0, resposta, strlen("CAN_DEFIN_NOME_4="), 8);
+ 	   		Scan(can_defin[4].nome, "%s>%s", can_defin[4].nome);//elimina tab ou espaco apos a string
+		}
+		
+		else if (strstr (resposta, "CAN_DEFIN_NUM_CANAL_1=") != NULL)
+		{
+			CopyString (tmp, 0, resposta, strlen("CAN_DEFIN_NUM_CANAL_1="), 8);
+			can_defin[1].canal = atoi(tmp);
+		}
+		else if (strstr (resposta, "CAN_DEFIN_NUM_CANAL_2=") != NULL)
+		{
+			CopyString (tmp, 0, resposta, strlen("CAN_DEFIN_NUM_CANAL_2="), 8);
+			can_defin[2].canal = atoi(tmp);
+		}
+		else if (strstr (resposta, "CAN_DEFIN_NUM_CANAL_3=") != NULL)
+		{
+			CopyString (tmp, 0, resposta, strlen("CAN_DEFIN_NUM_CANAL_3="), 8);
+			can_defin[3].canal = atoi(tmp);
+		}
+		else if (strstr (resposta, "CAN_DEFIN_NUM_CANAL_4=") != NULL)
+		{
+			CopyString (tmp, 0, resposta, strlen("CAN_DEFIN_NUM_CANAL_4="), 8);
+			can_defin[4].canal = atoi(tmp);
+		}
+		
+		else if(strstr (resposta, "DAQ_STRING_1="))
+		{
+			CopyString (DAQ_6210_string[1], 0, resposta, strlen("DAQ_STRING_1="), -1);
+			CopyString (DAQ_6210_string[2], 0, resposta, strlen("DAQ_STRING_1="), -1);  
+		}
+		else if(strstr (resposta, "DAQ_STRING_2="))
+		{
+			CopyString (DAQ_6210_string[2], 0, resposta, strlen("DAQ_STRING_2="), -1);
+		} 
+		
+		else if (strstr (resposta, "USAR_PORTA=") != NULL)
+		{
+			CopyString (configuracao, 0, resposta, 11, 3);
+ 	   		Scan(configuracao, "%s>%s", configuracao);//elimina tab ou espaco apos a string
+			
+			
+			if(strcmp(configuracao, "ON") == 0)
+				usar_porta = ON;
+			else
+				usar_porta = OFF;
+		}
+		
+		else if (strstr (resposta, "USAR_PRINTER=") != NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("USAR_PRINTER="), 3);
+ 	   		Scan(configuracao, "%s>%s", configuracao);//elimina tab ou espaco apos a string
+			
+			
+			if(strcmp(configuracao, "ON") == 0)
+				usar_printer = ON;
+			else
+				usar_printer = OFF;
+		}
+		
+		else if (strstr (resposta, "RUNIN=") != NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("RUNIN="), 3);
+ 	   		Scan(configuracao, "%s>%s", configuracao);//elimina tab ou espaco apos a string
+			
+			
+			if(strcmp(configuracao, "ON") == 0)
+				usar_runin = ON;
+			else
+				usar_runin = OFF;
+		}
+		
+		else if(strstr (resposta, "MONITOR=")!= NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("MONITOR="), 3);
+			Scan(configuracao, "%s>%s", configuracao);//elimina tab ou espaco apos a string
+			if(strcmp(configuracao, "A") == 0)
+				tipo_monitor = MONITOR_A;
+			else
+				tipo_monitor = MONITOR_B;
+		}
+		else if (strstr (resposta, "COMM_SIST=") != NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("COMM_SIST="), 2);
+			comm_sistema = atoi(configuracao);
+		}
+		else if (strstr (resposta, "COMM_SCANNER_1=") != NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("COMM_SCANNER_1="), 2);
+			dados_scanner[SCANNER_1].comm_scanner = atoi(configuracao);
+		}
+		else if (strstr (resposta, "COMM_SCANNER_2=") != NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("COMM_SCANNER_2="), 2);
+			dados_scanner[SCANNER_2].comm_scanner = atoi(configuracao);
+		}
+		else if (strstr (resposta, "HW_PRESENT=") != NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("HW_PRESENT="), -1);
+ 	   		Scan(configuracao, "%s>%s", configuracao);//elimina tab ou espaco apos a string
+			if(strcmp(configuracao, "OFF") == 0)
+				HW_present = OFF;
+		}
+		else if(strstr (resposta, "ACESSO_REMOTO=")!= NULL)
+		{
+			CopyString (configuracao, 0, resposta, strlen("ACESSO_REMOTO="), 3);
+ 	   		Scan(configuracao, "%s>%s", configuracao);//elimina tab ou espaco apos a string
+			if(strcmp(configuracao, "ON") == 0)
+				acesso_remoto = ON;
+			else
+				acesso_remoto = OFF;
+		}
+
+
+	}
+	CloseFile (file);
+	return 0;
+}
+
+//
+// Função: MensFinal()
+//
+int MensFinal( char *Rodape , int Mdl_Rj , double Tempo_Total , double res , double Hi_Lim ,
+			   double Low_Lim , char *Nome_Teste , int teste, int berco)
+{
+	char
+		tmp[90],
+		tmp2[90];
+
+	if(sair_programa)
+		return -1;
+	///painel_mensagens = LoadPanel( 0, "Mensagens.uir", MENSAGEM );
+	Fmt(tmp , "%f[p2]" , Tempo_Total);
+	InsertTextBoxLine (painel_mensagens, MENSAGEM_MSG_TXT_T_TOTAL , 0, tmp);
+	if (dados_berco[berco].rejeitado)
+	{
+		InsertTextBoxLine (painel_mensagens, MENSAGEM_MSG_TXT_CT_RJ, 0, dados_berco[berco].MensagemFalha1);
+		strcpy(dados_berco[berco].MensagemFalha1,"");
+		SetCtrlAttribute  (painel_mensagens, MENSAGEM_MSG_TXT_AP_RJ, ATTR_TEXT_BGCOLOR ,VAL_RED);
+		Fmt(tmp2,"REJEITADO - BERÇO %d", berco);
+		InsertTextBoxLine (painel_mensagens, MENSAGEM_MSG_TXT_AP_RJ, 0, tmp2 );
+	}
+	else
+	{
+		Fmt(tmp2,"APROVADO - BERÇO %d", berco);
+		SetCtrlAttribute  (painel_mensagens, MENSAGEM_MSG_TXT_AP_RJ, ATTR_TEXT_BGCOLOR ,VAL_GREEN);  
+		InsertTextBoxLine (painel_mensagens, MENSAGEM_MSG_TXT_AP_RJ, 0, tmp2);
+	}
+	DisplayPanel (painel_mensagens);
+	return(0);
+}
+
+//
+// Função: long val(char *str, int radix)
+//
+// Descrição: Converte uma string em inteira longa
+// Requerimento: char *str ( string a ser convertida )
+//			int radix ( define se o valor da string e base 10 ou base 16 )
+//
+// Retorno:	Retorna o valor da string convertida.
+// Ex:		char str[20];
+//			long	valor;
+//			valor = val( "2367", 10 );
+//			após função :    valor = (2367)
+//
+long val(char *str, int radix)
+{
+	char 
+		*aux;
+	return ( strtol( str, &aux, radix ));
+}
+
+//
+// Função: CINT
+//
+int CVICALLBACK CINT ( double V )
+{
+	int 
+		r;
+
+		r =  (int)(V*10) - ((int)V)*10;
+	if ( r >= 5 )
+	{						 
+		return( (int)V + 1 );
+	}
+	else
+	{
+		if ( r <= -5 )
+		{
+			return( (int)V -1 );
+		}
+	}
+	return( (int)V );
+}
+
+//
+// Função: MOD()
+//
+int MOD (double a, double b)
+{
+	double 
+		c,
+		d,
+		e,
+		fracao,inteiro;
+	int
+		ho;
+
+	c = a / b;
+	fracao = modf (c, &inteiro);
+	if (fracao < 0)
+	{
+		d = 1 + fracao;
+		e = c - d;
+	}
+	else
+	{
+		e = inteiro;
+	}
+	ho = a - b * e;
+	return ho;
+}
+
+//
+// Função: itostr ( int number, unsigned int casas )
+//
+// Descrição: Converte um número em uma string formatada
+// Requerimento:int number ( número a ser convertido )
+//  			unsigned int casas ( número de casas da formatação )
+// Retorno: 	string no formato  000xxx  onde xxx é um número de 3 caracteres
+// Ex:			char *string, str[20];
+//  			string = itostr( 12601, 7 );
+//  			strcpy( str, itostr( 3, 2 ) );
+//  			após função:  string = ("0012601")  str = ("03")
+//
+char *itostr( int number, unsigned int casas )
+{
+	int
+		n,
+		i = 0;
+	char
+		aux[20]="";
+
+		if( casas > 20 ) casas = 20;
+	n = (int)log10(abs(number)) + 1;
+	if( n >= casas )
+	{
+		sprintf( resp_itostr, "%d", number );
+		strcpy( resp_itostr, aux );
+		i = strlen(resp_itostr);
+		*(resp_itostr+i) = '\0';
+		return (resp_itostr);
+	}
+	sprintf( aux, "%d", abs(number) );
+	if( number < 0 )
+		strcpy( resp_itostr, "-0" );
+	else
+		strcpy( resp_itostr, "0" );
+	for(i=1; i < (int)(casas-n); i++ )
+	{
+		strcat( resp_itostr, "0" );
+	}
+	strcat( resp_itostr, aux );
+	i = strlen(resp_itostr);
+	*(resp_itostr+i) = '\0';
+	return( resp_itostr );
+}
+
+//
+// Função: instr()
+//
+int CVICALLBACK instr( unsigned int count, char *str, char ch)
+{
+	unsigned int
+		i,
+		lenght;
+
+	lenght = strlen(str);
+	if( count > lenght)
+	{
+		return(0);
+	}
+	for(i=count; i<=lenght; i++)
+	{
+		if( *(str+i) == ch)
+			return(++i);
+	}
+	return(0);
+}
+
+//
+// Função: Get_Pos()
+//
+int Get_Pos(char *Source , int ini , char car)
+{
+	char
+		*ptr;
+	int
+		pos;
+
+		Source = Source + ini - 1;
+	ptr = strchr(Source , car);
+	pos = ptr - Source + ini;
+	return (pos);
+}
+
+//
+// Função:	char *StringMid(char *str, unsigned int inicio, char ch, unsigned int *count)
+// Descrição: 		Copia os caracteres de uma string da esquerda até o caracter 'ch'
+// Requerimento:  	char *str (string a ser analisada )
+//  				unsigned int inicio (posição inicial na string a ser copiada)
+//  				char ch (caractere de posição de parada )
+//	 				unsigned int *count (contém a posição do caracter ch na string)
+// Retorno : 		Retorna os caracteres da string entre inicio e quantos
+// Ex :				char str[20] = "abcde,fgh";
+//  				char *string;
+//  				unsigned int c;
+//  				string = StringMid( str, 1, comma , &c );
+//  				após função :    string = ("abcde")  c = (6)
+//
+char *StringMid(  char *str, unsigned int inicio, char ch, unsigned int *count)
+{
+	unsigned int
+		i,
+		j = 0,
+		lenght;
+
+	lenght = strlen(str);
+	*(resp_str_mid) = '\0';
+	if( lenght == 0 || lenght <= inicio )
+		return (str);
+	if( inicio < 1 )
+		inicio = 1;
+	for( i=inicio-1; i < lenght; i++ )
+	{
+		if( *(str+i) !=  ch )
+		{
+			*(resp_str_mid+j) = *(str+i);
+			*(resp_str_mid+j+1) = '\0';
+			j++;
+		}
+		else
+		{
+			break;
+		}
+	}
+	*(resp_str_mid+j) = '\0';
+	if( j+inicio >= lenght )
+		*count = 0;
+	else
+		*count = j + inicio;
+	return ( resp_str_mid );
+}
+
+//
+// Função: Mensagem()
+//
+void Mensagem(char *Mens1, char *Mens2, char *Mens3,char *Mens4, int cor, int berco)
+{
+	int
+		i,
+		min_berco,
+		max_berco;
+
+	if (berco == 0)
+	{
+		min_berco = 1;
+		max_berco = NUMERO_DE_BERCOS;
+	}
+	else
+	{
+		min_berco = max_berco = berco;
+	}
+	
+	
+	for (i=min_berco; i<=max_berco; i++)
+	{
+		switch(cor)
+		{
+			case MENS_VERMELHO:
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_COLOR,VAL_RED);
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_BGCOLOR, VAL_WHITE);
+				break;
+			case MENS_AMARELO:
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_COLOR,VAL_YELLOW);
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_BGCOLOR, MENS_PRETO);
+				break;
+			case MENS_AZUL:
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_COLOR,VAL_BLUE);
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_BGCOLOR, VAL_WHITE);
+				break;
+			case MENS_PRETO:
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_COLOR,MENS_PRETO);
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_BGCOLOR, VAL_WHITE);
+				break;
+			case MENS_CINZA:
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_COLOR,VAL_DK_GRAY);
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_BGCOLOR, VAL_WHITE);
+				break;
+			case MENS_VERDE:
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_COLOR,VAL_DK_GREEN);
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_BGCOLOR, VAL_WHITE);
+				break;
+			default:
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_COLOR,VAL_DK_GRAY);
+				SetCtrlAttribute (painel_auto, dados_berco[i].crtlID_mensagem, ATTR_TEXT_BGCOLOR, VAL_WHITE);
+				break;
+		}
+		ResetTextBox (painel_auto, dados_berco[i].crtlID_mensagem, "" );
+		SetBreakOnLibraryErrors (0);
+		InsertTextBoxLine ( painel_auto, dados_berco[i].crtlID_mensagem, 0, Mens1);
+		InsertTextBoxLine ( painel_auto, dados_berco[i].crtlID_mensagem, 1, Mens2);
+		InsertTextBoxLine ( painel_auto, dados_berco[i].crtlID_mensagem, 2, Mens3);
+		SetBreakOnLibraryErrors (1);
+		///InsertTextBoxLine ( painel_auto, dados_berco[i].crtlID_mensagem, 3, Mens4);
+	}
+
+	ProcessDrawEvents ();
+}
+
+
+//
+// Função: CodigoData()
+//
+// Descrição: Retorna o codigo de data no formato horas passadas da data inicial
+//
+int CodigoData(int datainicio)
+{
+	int y,
+		d,
+		m,
+		hh,
+		min,
+		s,
+		h,
+		anobisexto,
+		ajuste,
+		status,
+		correcao = 0;
+
+	status = GetSystemDate (&m, &d, &y);
+	if(status<0)
+		return FALHA;
+	status = GetSystemTime (&h, &min, &s);
+	if(status<0)
+		return FALHA;
+	switch(m)
+	{
+		case 1:
+			ajuste = 1;
+			break;
+		case 2:
+			ajuste = -2;
+			break;
+		case 3:
+			ajuste = 1;
+			break;
+		case 4:
+			ajuste = 0;
+			break;
+		case 5:
+			ajuste = 1;
+			break;
+		case 6:
+			ajuste = 0;
+			break;
+		case 7:
+			ajuste = 1;
+			break;
+		case 8:
+			ajuste = 1;
+			break;
+		case 9:
+			ajuste = 0;
+			break;
+		case 10:
+			ajuste = 1;
+			break;
+		case 11:
+			ajuste = 0;
+			break;
+		case 12:
+			ajuste = 1;
+			break;
+		default:
+			ajuste = 0;
+			break;
+	}
+	if ((fmod(y,4) == 0) && (m > 2))
+	{
+		anobisexto = 1;
+	}
+	else
+	{
+		anobisexto = 0;
+	}
+	correcao = (y - 1900 - datainicio) * 365 * 24;
+	hh = ((d + ajuste + anobisexto + 30*(m - 1))*24) + h + correcao;
+	if(hh > 0xFFFF) return -1; //precisa ajustar a data de inicio
+	return hh;
+}
+
+/*-----------------------------------------------------------------------------------------
+				Retorna o dia do ano (calendario juliano)
+-----------------------------------------------------------------------------------------*/
+
+int CalendarioDiadoAno(void)
+{
+int y, 
+    d, 
+    m, 
+    hh, 
+    anobisexto,
+    ajuste;
+   
+
+		status = GetSystemDate (&m, &d, &y);
+		if(status<0) 
+		   return FALHA;
+	
+		switch(m){
+		
+			case 1:
+				ajuste = 0;
+				break;
+			case 2:
+				ajuste = 1;
+				break;
+			case 3:
+				ajuste = -1;
+				break;
+			case 4:
+				ajuste = -1;
+				break;
+			case 5:
+				ajuste = -1;
+				break;
+			case 6:
+				ajuste = 0;
+				break;
+			case 7:
+				ajuste = 1;
+				break;
+			case 8:
+				ajuste = 2;
+				break;
+			case 9:
+				ajuste = 3;
+				break;
+			case 10:
+				ajuste = 3;
+				break;
+			case 11:
+				ajuste = 3;
+				break;
+			case 12:
+				ajuste = 4;
+				break;
+			default:
+				ajuste = 0;
+				break;
+		  }
+		if ((fmod(y,4) == 0) && (m > 2)){
+			anobisexto = 1; 	
+		}else{
+			anobisexto = 0;
+		}	
+		
+		hh = (d + ajuste + anobisexto + 30*(m - 1));
+		if(hh > 0xFFFF) return -1;//precisa ajustar a data de inicio	
+		
+return hh;
+}
+
+
+//
+// Função:Decimal_to_Hex()
+//
+void Decimal_to_Hex( int Decimal, char *Hex )
+{
+	int
+		resto,
+		dividendo;
+	char
+		aux[10];
+
+	if( Decimal < 0 )
+		Decimal = Decimal + 256;
+	resto = Decimal/16;
+	dividendo = Decimal - (resto * 16);
+	if( resto > 9 )
+		resto = resto + 55;
+	else
+		resto = resto + 48;
+	Fmt( Hex, "%c", resto );
+	if( dividendo > 9 )
+		dividendo = dividendo + 55;
+	else
+		dividendo = dividendo + 48;
+	Fmt( aux, "%c", dividendo );
+	strcat( Hex, aux );
+}
+//
+// Função: IsOnlyNumeric ()
+//
+int IsOnlyNumeric ( char *str )
+{
+	unsigned int
+		i,
+		lenght,
+		flag=0;
+
+	lenght = strlen(str);
+	for( i=0; i < lenght; i++ )
+	{
+		if( (*(str+i) <  '0' || *(str+i) >  '9') && (*(str+i) != '.' ) )
+		{
+			if( i==0 || i ==(lenght-1) )
+			{
+				if( *(str+i) != ' ' )
+				{
+					return 1;
+				}
+			}
+			else
+			{
+				return 1;
+			}
+		}
+		else
+		{
+			if( *(str+i) == '.' )
+			{
+				if(flag == 0)
+					flag = 1;
+				else
+					return 1;
+			}
+		}
+	}
+	return 0;
+}
+
+//
+// Função: Data_e_Hora()
+//
+void Data_e_Hora ( char *Data, char *Time, char *Mlabel )
+{
+	char
+		hr[5],
+		mn[5],
+		sg[5];
+	char
+		dd[5],
+		buffer[40];
+
+	GetSystemTime ( &horas, &minutos , &segundos );
+	Fmt( hr, "%d", horas);
+	Fmt( mn, "%d", minutos);
+	Fmt( sg, "%d", segundos);
+	if( strlen(sg) == 1 )
+		Fmt( sg, "0%d", segundos );
+	if( strlen(hr) == 1 )
+		Fmt( hr, "0%d", horas );
+	if( strlen(mn) == 1 )
+		Fmt( mn, "0%d", minutos );
+	Fmt ( buffer, "%s:%s:%s " , hr, mn, sg );
+	strcpy( Time, buffer);
+	GetSystemDate ( &Mes, &Dia, &Ano);
+	switch (Mes)
+	{
+		case 1:
+			strcpy( Mlabel, "Jan");
+			break;
+		case 2:
+			strcpy( Mlabel, "Fev");
+			break;
+		case 3:
+			strcpy( Mlabel, "Mar");
+			break;
+		case 4:
+			strcpy( Mlabel, "Abr");
+			break;
+		case 5:
+			strcpy( Mlabel, "Mai");
+			break;
+		case 6:
+			strcpy( Mlabel, "Jun");
+			break;
+		case 7:
+			strcpy( Mlabel, "Jul");
+			break;
+		case 8:
+			strcpy( Mlabel, "Ago");
+			break;
+		case 9:
+			strcpy( Mlabel, "Set");
+			break;
+		case 10:
+			strcpy( Mlabel, "Out");
+			break;
+		case 11:
+			strcpy( Mlabel, "Nov");
+			break;
+		case 12:
+			strcpy( Mlabel, "Dez");
+			break;
+		default:
+			break;
+	}
+	Fmt( dd, "%d", Dia);
+	if( strlen(dd) == 1 )
+		Fmt( dd, "0%d", Dia );
+	Fmt ( buffer, "%s-%s-%d " , dd, Mlabel, Ano );
+	strcpy( Data, buffer);
+}
+
+//
+// Função: CVI_PlaySound()
+//
+// Descrição: Play the specified sound file synchronously or asynchronously.
+//
+short CVI_PlaySound (char *fileName, short asynchronous)
+{
+	int
+		file_present;
+		ssize_t
+		tamanho;
+
+	file_present = GetFileInfo (fileName, &tamanho);
+	if(file_present != 1)
+	{
+		MessagePopup ("Erro nome do arquivo de som",
+					  "Arquivo de SOM Multimidia não encontrado.");
+		return -1;
+	}
+	if (asynchronous)
+		return (short)sndPlaySound(fileName, SND_ASYNC);
+	else
+		return (short)sndPlaySound(fileName, SND_SYNC);
+}
+
+//
+// Função: CVI_PlaySoundEx()
+//
+// Descrição: Play the specified sound file synchronously or asynchronously, with some
+//			  additional options.
+//
+short CVI_PlaySoundEx (char *fileName, short asynchronous, short loop,
+					   short playDefault, short stopCurrentSound)
+{
+	UINT
+		flags = 0;
+
+	if (loop)
+		flags |= SND_ASYNC | SND_LOOP;
+	else if (asynchronous)
+		flags |= SND_ASYNC;
+	else
+		flags |= SND_SYNC;
+	if (!playDefault)
+		flags |= SND_NODEFAULT;
+	if (!stopCurrentSound)
+		flags |= SND_NOSTOP;
+	return (short)sndPlaySound (fileName, flags);
+}
+
+//
+// Função: CVI_StopCurrentSound()
+//
+// Descrição: Stop playing the current sound.
+//
+void CVI_StopCurrentSound (void)
+{
+	sndPlaySound(NULL, 0);
+}
+
+
+
+/*********************************** LeArquivos_LiveKey(void) **********************************************************/
+int LeArquivos_LiveKey(int berco)
+{
+char 
+	tmp[500],
+	nome_arquivo[500];
+int 
+	file_atual_index,
+	file_arq_live_key_asc, 
+	bytes_lidos,
+	status; 
+ssize_t
+	tamanho;
+
+	manual_index_live_key = atual_index_live_key[berco] = -1;
+	strcpy(nome_arquivo_flag_live_key, 	PATH_LIVE_KEY);
+	strcat(nome_arquivo_flag_live_key, 	ARQ_FLAG_ACESS_LKEY);
+	strcpy(nome_arquivo, 				PATH_LIVE_KEY);
+	strcat(nome_arquivo, 				ARQ_REG_INDEX_LKEY);
+	file_atual_index = OpenFile( nome_arquivo, VAL_READ_ONLY, VAL_OPEN_AS_IS, VAL_ASCII ) ;
+    if (file_atual_index < 0)
+	{
+		if(ConfirmPopup ("Erro ao tentar abrir arquivo de controle do Live Key",
+					  "Houve um erro ao tentar abrir arquivo de controle de INDEX para sequência do LiveKey.\n Você deseja continuar?") < 1)
+    	return -1;
+	}
+	status = ReadLine (file_atual_index, tmp, -1);
+	CloseFile (file_atual_index);
+	if(status < 1)
+	{
+		if(ConfirmPopup ("Erro ao tentar ler arquivo de controle do Live Key",
+					  "Houve um erro ao tentar ler arquivo de controle de INDEX para sequência do LiveKey.\nDado inválido na leitura do arquivo\n Você deseja continuar?") < 1)
+    	return -2;
+	}
+	atual_index_live_key[berco]  = atoi(tmp);
+	if(atual_index_live_key[berco] < 1 || atual_index_live_key[berco] > 10000) // máximo numero de ECU-IDs
+	{
+		if(ConfirmPopup ("Erro ao tentar ler arquivo de controle do Live Key",
+					  "Houve um erro ao tentar ler arquivo de controle de INDEX para sequência do LiveKey.\nDado inválido na leitura do arquivo\n Você deseja continuar?") < 1)
+    	return -3;
+	}
+	///////////////////////////////////////////////////////
+	strcpy(nome_arquivo, 				PATH_LIVE_KEY);
+	strcat(nome_arquivo, 				ARQ_ATUAL_ASC_LKEY);
+	file_arq_live_key_asc = OpenFile( nome_arquivo, VAL_READ_ONLY, VAL_OPEN_AS_IS, VAL_ASCII ) ;
+    if (file_arq_live_key_asc < 0)
+	{
+		if(ConfirmPopup ("Erro ao tentar abrir arquivo de controle do Live Key",
+					  "Houve um erro ao tentar abrir arquivo com a definição do nome do ARQUIVO de SEQUÊNCIA do LiveKey(ASC).\n Você deseja continuar?") < 1)
+    	return -1;
+	}
+	status = ReadLine (file_arq_live_key_asc, tmp, -1);
+	if(status < 5) // min '*.asc'
+	{
+		if(ConfirmPopup ("Erro ao tentar ler arquivo de controle do Live Key",
+					  "Houve um erro ao tentar ler arquivo de controle de INDEX para sequência do LiveKey.\nDado inválido na leitura do arquivo\n Você deseja continuar?") < 1)
+    	return -2;
+	}
+	CloseFile (file_arq_live_key_asc);
+	manual_index_live_key = atual_index_live_key[berco] ;
+	//////////////////////////////////////////////////////
+	strcpy(nome_arq_ASC_live_key, PATH_LIVE_KEY);
+	strcat(nome_arq_ASC_live_key, tmp);
+	status = GetFileSize (nome_arq_ASC_live_key, &tamanho);
+    if (status < 0)
+	{
+		if(ConfirmPopup ("Erro ao tentar abrir arquivo de controle do Live Key(ASC)",
+					  "Houve um erro ao tentar abrir arquivo com os dados de ECU-IDs(ASC).\n Você deseja continuar?") < 1)
+    	return -1;
+	}
+	if(tamanho < MIN_TAMANHO_ARQ_ASC_LKEY || tamanho > MAX_TAMANHO_ARQ_ASC_LKEY)
+	{
+		if(ConfirmPopup ("Erro ao tentar abrir arquivo de controle do Live Key(ASC)",
+					  "Houve um erro ao tentar abrir arquivo com os dados de ECU-IDs(ASC).\n O arquivo esta com tamnho ANORMAL\n Você deseja continuar?") < 1)
+    	return -1;
+	}
+	file_arq_live_key_asc = OpenFile( nome_arq_ASC_live_key, VAL_READ_ONLY, VAL_OPEN_AS_IS, VAL_ASCII ) ;
+    if (file_arq_live_key_asc < 0)
+	{
+		if(ConfirmPopup ("Erro ao tentar abrir arquivo de controle do Live Key(ASC)",
+					  "Houve um erro ao tentar abrir arquivo com os dados de ECU-IDs(ASC).\n Você deseja continuar?") < 1)
+    	return -1;
+	}
+	free(dados_arq_ASC_live_key);
+	dados_arq_ASC_live_key = (char *)malloc(tamanho+2);
+	bytes_lidos = ReadFile (file_arq_live_key_asc, dados_arq_ASC_live_key, tamanho);
+	CloseFile (file_arq_live_key_asc);
+	if(bytes_lidos < (tamanho * 0.7))
+	{
+		if(ConfirmPopup ("Erro ao tentar abrir arquivo de controle do Live Key(ASC)",
+					  "Houve um erro ao ler o arquivo com os dados de ECU-IDs(ASC).\n Você deseja continuar?") < 1)
+		free(dados_arq_ASC_live_key);
+		dados_arq_ASC_live_key = NULL;
+    	return -1;
+	}
+	dados_arq_ASC_live_key[bytes_lidos-1]=0; //indica fim da string
+	
+return 0;	
+	
+}
+
+/*********************************** LeDados_ASC_LiveKey() **********************************************************/
+int LeDados_ASC_LiveKey(int index, int berco)
+{
+int offset_ponteiro,
+	i,
+	quant_car_por_linha = 32,
+	quant_car_por_index = 297; 
+
+	if(dados_arq_ASC_live_key == NULL)
+	{
+		 if(modo_manual)
+		 {
+			 MessagePopup ("Erro ao tentar ler dados de Live Key CAN",
+						   "Houve um erro ao tentar ler dados de Live Key - Ponteiro não inicializado");
+		 }
+		 return -1;
+	}
+	if(strlen(dados_arq_ASC_live_key) < quant_car_por_index)
+	{
+		 if(modo_manual)
+		 {
+			 MessagePopup ("Erro ao tentar ler dados de Live Key CAN",
+						   "Houve um erro ao tentar ler dados de Live Key - Ponteiro de dados menor que o normal");
+		 }
+		 return -2;
+	}
+	 
+	maximo_index_live_key = (strlen(dados_arq_ASC_live_key)/ quant_car_por_index) + 1;
+	if(index > maximo_index_live_key)
+	{
+		 if(modo_manual)
+		 {
+			 MessagePopup ("Erro ao tentar ler dados de Live Key CAN",
+						   "Houve um erro ao tentar ler dados de Live Key - O valor do indexador está acima do máximo permitido para este arquivo");
+		 }
+		 return FALHA_INDEX_LKEY_ASC_OVER;
+	}
+	offset_ponteiro = (index - 1) * quant_car_por_index;
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].ecu_id[i]  	= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].ecu_id[i+1]  	= 0;
+	}
+	////////////////////////////////////////////////////////////
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].master_key_1[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].master_key_1[i+1]  = 0;
+	}
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].master_key_2[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].master_key_2[i+1]  = 0;
+	}
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].master_key_3[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].master_key_3[i+1]  = 0;
+	}
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].master_key_4[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].master_key_4[i+1]  = 0;
+	}
+	//////////////////////////////////////////////////////////
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].unlock_key_1[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].unlock_key_1[i+1]  = 0;
+	}
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].unlock_key_2[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].unlock_key_2[i+1]  = 0;
+	}
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].unlock_key_3[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].unlock_key_3[i+1]  = 0;
+	}
+	offset_ponteiro = offset_ponteiro + (quant_car_por_linha+1);
+	for(i=0; i < quant_car_por_linha; i++)
+	{
+		dados_live_key[berco].unlock_key_4[i]= dados_arq_ASC_live_key[offset_ponteiro + i];
+		dados_live_key[berco].unlock_key_4[i+1]  = 0;
+	} 
+	
+	SetCtrlAttribute  (panel_CAN_diagnostico, 	TELA_DIAG_INDEX_MAXIMO,   ATTR_CTRL_VAL , maximo_index_live_key);
+	ResetTextBox 	  (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, 	  dados_live_key[berco].ecu_id);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].master_key_1);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].master_key_2);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].master_key_3);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].master_key_4);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].unlock_key_1);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].unlock_key_2);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].unlock_key_3);
+	InsertTextBoxLine (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID, -1, dados_live_key[berco].unlock_key_4);
+	
+	SetCtrlAttribute  (panel_CAN_diagnostico, 	TELA_DIAG_WRITE_MASTER_KEY, ATTR_DIMMED , OFF);
+	SetCtrlAttribute  (panel_CAN_diagnostico, 	TELA_DIAG_INDEX_MANUAL,   	ATTR_DIMMED , OFF);
+	SetCtrlAttribute  (panel_CAN_diagnostico, 	TELA_DIAG_WRITE_ALTERNATIVA,ATTR_DIMMED , OFF);
+	SetCtrlAttribute  (panel_CAN_diagnostico, 	TELA_DIAG_RESPOSTAS_M4_M5,	ATTR_DIMMED , OFF);
+	SetCtrlAttribute  (panel_CAN_diagnostico, 	TELA_DIAG_IPC_ECU_ID,		ATTR_DIMMED , OFF);
+	
+return 0;
+}
+
+/*********************************** LerIndexar_arq_index_LiveKey() **********************************************************/
+int LerIndexar_arq_index_LiveKey(int gravar_apenas, int berco)
+{
+char 
+	tmp[500],
+	nome_arq_flag_access[500],
+	nome_arq_index[500];
+int 
+	file_atual_index,
+	file_flag_access,
+	status;
+ssize_t
+	tamanho;
+double
+	t,
+	timeout = 1.00;
+static int
+	anterior_index_live_key = -1;
+	
+	if(modo_manual)
+	{
+		if(atual_index_live_key[berco] != manual_index_live_key)
+		{
+			if(ConfirmPopup ("Atualizar o Index?",
+						  "Deseja fazer do Index Manual o Index Atual?") == 1)
+			{
+				atual_index_live_key[berco] = manual_index_live_key;
+			}
+			else
+			{
+				return SUCESSO;
+			}
+		}
+		if(anterior_index_live_key == atual_index_live_key[berco])
+			return SUCESSO;
+	}
+	/////////////  levanta o flag de acesso ///////////////////////////////
+	strcpy(nome_arq_flag_access, 	PATH_LIVE_KEY);
+	strcat(nome_arq_flag_access,    ARQ_FLAG_ACESS_LKEY);
+	t = Timer();
+	do
+	{
+		Delay_thread(0.001);
+		status = GetFileSize (nome_arq_flag_access, &tamanho);
+	}while(status != -1 && Timer() - t < timeout);
+	if(status != -1)
+	{
+		if(modo_manual)
+		{
+			MessagePopup ("Erro ao tentar gravar dado do Index do LiveKey",
+						  "Falha na gravação do index do LiveKey\nO arquivo FLAG de acesso de gravação do contador esta ativo");
+		}
+		return -1;
+	}
+	file_flag_access = OpenFile (nome_arq_flag_access, VAL_WRITE_ONLY, VAL_OPEN_AS_IS, VAL_ASCII);
+    if (file_flag_access < 0)
+	{
+		if(modo_manual)
+		{
+			MessagePopup ("Erro ao tentar gravar dado do Index do LiveKey",
+						  "Falha na gravação do index do LiveKey\nNão conseguiu gerar o arquivo FLAG de acesso de gravação do contador");
+		}
+    	return -2;
+	}
+	Delay_thread(0.001);
+	CloseFile (file_flag_access);
+	////////////////// Le e indexa o arquivo de controle do index do live key //////////////////
+	strcpy(nome_arq_index, 	PATH_LIVE_KEY);
+	strcat(nome_arq_index, 	ARQ_REG_INDEX_LKEY);
+	file_atual_index = OpenFile (nome_arq_index, VAL_READ_WRITE, VAL_OPEN_AS_IS, VAL_ASCII);
+    if (file_atual_index < 0)
+	{
+		if(modo_manual)
+		{
+			MessagePopup ("Erro ao tentar gravar dado do Index do LiveKey",
+						  "Falha na gravação do index do LiveKey\nNão conseguiu abrir o arquivo INDEX do contador do Live-Key");
+		}
+    	return -3;
+	}
+	if(gravar_apenas == OFF) //Quando for igual a ON apenas grava o dado no arquivo de index - utilizado para a mala de testes/modo manual
+	{
+		status = ReadLine (file_atual_index, tmp, -1);
+		if(status < 1 || status > 6)
+		{
+			if(modo_manual)
+			{
+				MessagePopup ("Erro ao tentar gravar dado do Index do LiveKey",
+							  "Falha na gravação do index do LiveKey\nNão conseguiu LER o arquivo INDEX do contador do Live-Key(Valor Inválido na leitura)");
+			}
+	    	return -4;
+		}
+		atual_index_live_key[berco] = atoi(tmp)+1; //indexa o ponteiro do live key
+		
+	}
+	if(atual_index_live_key[berco] < 1 || atual_index_live_key[berco] > MAXIMO_INDEX_LIVKEY)
+	{
+		if(modo_manual)
+		{
+			MessagePopup ("Erro ao tentar gravar dado do Index do LiveKey",
+						  "Falha na gravação do index do LiveKey\nValor do dado do indexador está fora do range permitido");
+		}
+    	return INDEX_LIVEKEY_OUT_OF_RANGE;
+	}
+	status = SetFilePtr (file_atual_index, 0, 0);
+	if(status < 0)
+	{
+		if(modo_manual)
+		{
+			MessagePopup ("Erro ao tentar gravar dado do Index do LiveKey",
+						  "Falha na gravação do index do LiveKey\nNão conseguiu setar ponteiro de inicio de arquivo");
+		}
+    	return -5;
+	}
+	Fmt(tmp, "%s<%i", atual_index_live_key[berco]);
+	status = WriteLine (file_atual_index, tmp, strlen(tmp));
+    if (status < 0)
+	{
+		if(modo_manual)
+		{
+			MessagePopup ("Erro ao tentar gravar dado do Index do LiveKey",
+						  "Falha na gravação do index do LiveKey\nNão conseguiu abrir o arquivo INDEX do contador do Live-Key");
+		}
+		CloseFile (file_atual_index);
+    	return -4;
+	}
+	CloseFile (file_atual_index);
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	Delay_thread(0.001);
+	DeleteFile (nome_arq_flag_access);
+	Delay_thread(0.001);
+	anterior_index_live_key = atual_index_live_key[berco];
+	manual_index_live_key = atual_index_live_key[berco];
+	if(modo_manual)
+	{
+		SetCtrlAttribute (panel_CAN_diagnostico, TELA_DIAG_INDEX_ATUAL,  	 ATTR_CTRL_VAL ,	atual_index_live_key[berco]);
+		SetCtrlAttribute (panel_CAN_diagnostico, TELA_DIAG_INDEX_MANUAL,  	 ATTR_CTRL_VAL ,	manual_index_live_key);
+	}
+return SUCESSO;
+}
+
+/********************** Gerar_etiqueta() ***************************************************************/
+int Gerar_etiqueta(char *costumer_pn,
+				   char *NSerie,  
+				   char *vpps,
+				   char *duns,
+				   char *bar_code_prefixo
+				   )
+
+{
+int
+	prn = 1,
+	cont_1,	
+	status,
+	dado_manuf_date,
+ 	tg,
+ 	ntg,
+	file;
+char
+	label_EI1 [5],  //to costumer end item
+	label_EI2 [10],
+	traceability[20]="",
+	mens_err[100],
+	etiqueta[100001]={0},
+ 	tmp_etiqueta[100001]={0}, 
+	at_etiqueta[100001]={0},		
+ 	aux_1[20000]="",
+ 	aux_2[20000]="", 
+ 	aux_3[20000]="", 
+	serial[20],
+ 	n_etiqueta[100]="",
+	*data,
+ 	ano[5]="",
+ 	aux[20]="";
+unsigned char	   						
+	diadoano[10];
+	   					
+		///////////////////////////////////////////
+		if(strcmp(bar_code_prefixo ,"")==0)
+			return -1;
+		data = DateStr ();
+		CopyString(ano, 0, data, 8, 2);
+		
+		// data e numero de serie
+		dado_manuf_date = CalendarioDiadoAno();
+		status = sprintf(diadoano, "%03i", dado_manuf_date);
+		if(status < 0)
+		{
+			MessagePopup ("Falha no arquivo de etiqueta", "Erro na formatação da data");
+			return FALHA;
+		}
+		
+		CopyString(aux, 0, NSerie, TAMANHO_PREFIXO_ENDITEM-3, -1);
+		status = Fmt(serial, "%s", aux);
+		if(status < 0)
+		{
+			MessagePopup ("Falha no arquivo de etiqueta", "Erro na formatação do número de série ");
+			return FALHA;
+		}
+	
+		strcpy(traceability, "G1"); // G - line, 1 - shift
+		strcat(traceability, ano);
+		strcat(traceability, diadoano);
+		strcat(traceability, serial);
+		
+retente_imp:
+		//////////////////////////////////////////////////////////////////////////
+	 	//pega etiqueta
+	 	strcpy(n_etiqueta, CAMINHO_ETIQUETAS);
+		//strcat(n_etiqueta,label_name);
+		strcat(n_etiqueta, bar_code_prefixo);
+		if (prn==0) 
+			strcat(n_etiqueta, ".txt");
+		else
+			strcat(n_etiqueta, ".prn");
+
+		file = OpenFile (n_etiqueta, VAL_READ_ONLY, VAL_OPEN_AS_IS, VAL_BINARY); 
+		if (file<0)
+		{
+			strcpy(mens_err, "Arquivo de etiquetas não encontrado para este modelo - ");
+			strcat(mens_err, bar_code_prefixo);
+			if (prn==0) 
+				strcat(mens_err, ".txt");
+			else
+				strcat(mens_err, ".prn");
+			MessagePopup ("Falha no arquivo de etiqueta", mens_err);
+			goto retente_imp;
+		}
+		strcpy(at_etiqueta,"");
+		if (prn ==1)
+			status=ReadLine ( file, aux_1, 10000 );
+		do
+		{
+			status=ReadLine ( file, aux_1, 10000 );
+			strcat(at_etiqueta,aux_1);
+		}
+		while (status>0);
+		CloseFile (file); 
+	   	//////////////////////////////////////////////////////////////////////
+	   					
+		cont_1=0;
+	
+	    ///////////////////////////////////////////////////////////////////////
+		tg=0;
+		ntg=-1;
+		strcpy(aux_2, ""); 
+		strcpy(aux_3, ""); 
+		
+		if (prn==0) 
+			strcpy(tmp_etiqueta, at_etiqueta);
+		else
+		{	
+			strcpy(tmp_etiqueta,"${");
+			strcat(tmp_etiqueta, at_etiqueta);
+		}
+		 
+		// costumer pn
+		CopyString(label_EI1,0,costumer_pn,0,4);
+		CopyString(label_EI2,0,costumer_pn,4,4); 
+		
+		strcpy(aux_2, ""); 
+		strcpy(aux_3, "");
+		do
+		{
+				tg=FindPattern (tmp_etiqueta,tg,strlen(tmp_etiqueta),"[PNC1]",1,0); //costumer pn fonte menor
+				if (tg>0)
+				{
+					ntg=1;
+					CopyString (aux_2,0,tmp_etiqueta,0,tg);
+					strcat(aux_2,label_EI1);
+					CopyString (aux_3,0,tmp_etiqueta,tg+6,strlen(tmp_etiqueta)-tg-6);
+					strcat(aux_2,aux_3);
+					strcpy(tmp_etiqueta,aux_2);
+					tg=tg+5;
+				}
+		}while (tg!=-1); 
+		strcpy(aux_2, ""); 
+		strcpy(aux_3, "");
+		do
+		{
+				tg=FindPattern (tmp_etiqueta,tg,strlen(tmp_etiqueta),"[PNC2]",1,0); //costumer pn fonte maior
+				if (tg>0)
+				{
+					ntg=1;
+					CopyString (aux_2,0,tmp_etiqueta,0,tg);
+					strcat(aux_2,label_EI2);
+					CopyString (aux_3,0,tmp_etiqueta,tg+6,strlen(tmp_etiqueta)-tg-6);
+					strcat(aux_2, aux_3);
+					strcpy(tmp_etiqueta,aux_2);
+					tg=tg+5;
+				}
+		}while (tg!=-1);  
+		strcpy(aux_2, ""); 
+		strcpy(aux_3, "");
+		do
+		{
+				tg=FindPattern (tmp_etiqueta,tg,strlen(tmp_etiqueta),"[PC]",1,0); //costumer pn no datamatrix
+				if (tg>0)
+				{
+					ntg=1;
+					CopyString (aux_2,0,tmp_etiqueta,0,tg);
+					strcat(aux_2, costumer_pn);
+					CopyString (aux_3,0,tmp_etiqueta,tg+4,strlen(tmp_etiqueta)-tg-4);
+					strcat(aux_2,aux_3);
+					strcpy(tmp_etiqueta,aux_2);
+					tg=tg+5;
+				}
+		}while (tg!=-1); 
+		 
+		strcpy(aux_2, ""); 
+		strcpy(aux_3, "");
+						
+		do
+		{
+				tg=FindPattern (tmp_etiqueta,tg,strlen(tmp_etiqueta),"[TRACE]",1,0); //manufacture traceability (G+YY+julian date+serial)
+				if (tg>0)
+				{
+					ntg=1;
+					CopyString (aux_2,0,tmp_etiqueta,0,tg);
+					strcat(aux_2, traceability);  
+					CopyString (aux_3,0,tmp_etiqueta,tg+7,strlen(tmp_etiqueta)-tg-7);
+					strcat(aux_2,aux_3);
+					strcpy(tmp_etiqueta,aux_2);
+					tg=tg+4;
+				}
+		}while (tg!=-1); 
+		strcpy(aux_2, ""); 
+		strcpy(aux_3, "");
+		do
+		{
+				tg=FindPattern (tmp_etiqueta,tg,strlen(tmp_etiqueta),"[VPPS]",1,0); //vpps level
+				if (tg>0)
+				{
+					ntg=1;
+					CopyString (aux_2,0,tmp_etiqueta,0,tg);
+					strcat(aux_2,vpps);  
+					CopyString (aux_3,0,tmp_etiqueta,tg+6,strlen(tmp_etiqueta)-tg-6);
+					strcat(aux_2,aux_3);
+					strcpy(tmp_etiqueta,aux_2);
+					tg=tg+4;
+				}
+		 }while (tg!=-1); 
+		 strcpy(aux_2, ""); 
+		 strcpy(aux_3, "");
+		do
+		{
+				tg=FindPattern (tmp_etiqueta,tg,strlen(tmp_etiqueta),"[DUNS]",1,0); //duns 903326643
+				if (tg>0)
+				{
+					ntg=1;
+					CopyString (aux_2,0,tmp_etiqueta,0,tg);
+					strcat(aux_2,duns);  
+					CopyString (aux_3,0,tmp_etiqueta,tg+6,strlen(tmp_etiqueta)-tg-6);
+					strcat(aux_2,aux_3);
+					strcpy(tmp_etiqueta,aux_2);
+					tg=tg+5;
+				}
+		 }while (tg!=-1); 
+		 
+		 
+		if(ntg==-1)
+		{
+			strcpy(aux_3,tmp_etiqueta);
+		}
+ 		strcpy(etiqueta,tmp_etiqueta);
+
+		if (prn==0)
+			strcat(etiqueta,"\0");  
+		else
+			strcat(etiqueta,"}$");
+		////////////////////////////////////////
+		///strcpy(last_label, etiqueta);  
+		////////////////////////////////////////
+		
+		status = PrintTextBuffer( etiqueta, "") ;
+		if (status != 0)  //impressão falhou
+		{			
+		 	return -1;
+		}
+							
+return 1;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*               Converte dois caracteres ascii em um byte                   */
+/*---------------------------------------------------------------------------*/
+int twoASCIItoByte(const unsigned char * in, unsigned char * out)
+{
+int 
+	i = 0, x = 0, tam = 0;
+char 
+	c[4]={0};
+	
+		tam = strlen(in)/2;
+		for(i=0;i<tam;i++)
+		{
+			CopyString(c, 0, in, i*2, 2);
+			Fmt(&x,"%x<%s", c);
+			out[i] = x;
+		}
+		out[tam] = '\0';
+return x;
+}
+
+				  
+//
+// Função: AtualizaStationID()
+//
+int AtualizaStationID(void)
+{
+int
+	file,
+	i,
+	tamanho;
+char
+	buffer[50],
+	label[50];
+	
+	//**********  Inicializa variaveis **********
+	strcpy(stationID,"");
+	file = OpenFile ("..\\CIM\\Config_Cim.txt", VAL_READ_ONLY, VAL_OPEN_AS_IS, VAL_ASCII);
+	if (file < 0)
+	{
+		MessagePopup ( " Erro abrindo arquivo CIM", "Falha ao abrir arquivo de configuração do CIM..." );
+		return -1;
+	}
+	for(i=0; i < 10; i++) //le até 10 linhas
+	{
+		if(ReadLine (file, buffer, 29)<0)//fim do arquivo
+			break;
+		strcpy (label, buffer);
+		tamanho = strlen(label);
+		if (!tamanho) continue; //continua no loop se string for vazia
+		StringUpperCase (label);
+		if((strstr(label,"FIM") != NULL || strstr(label,"END") != NULL) && strlen(label)<=4)
+			break;
+
+		if(strstr(label, "MAQUINA=") != NULL)
+		{
+			CopyString (stationID, 0, label, 8, 12);
+			break;
+		}
+		else if (strstr (label, "DESC_OPERAC=") != NULL)
+		{
+ 			CopyString (descric_operacao,0, label, 12, 12);
+		}
+	}
+	CloseFile (file);
+	
+	return 0;
+}

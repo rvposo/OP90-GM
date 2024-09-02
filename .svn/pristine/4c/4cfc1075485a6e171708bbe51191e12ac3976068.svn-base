@@ -1,0 +1,34 @@
+Auxiliar OP090 GM-GEM.obj
+base64.obj
+Callbacks GM-Gem.obj
+Callbacks OP090 GM-GEM.obj
+CAN GM-Gem.obj
+CIMSockets.obj
+cvixml.obj
+CyberXML.obj
+Global Error Tracking.obj
+Main OP090 GM-GEM.obj
+Master_e_Negative_Samples.obj
+National_USB_DAQ.obj
+Sistema OP090 GM-GEM.obj
+Testes OP090 GM-GEM.obj
+cvistart.lib
+cvi.lib
+Adm Equip.lib
+analysis.lib
+bd-support.lib
+cviauto.lib
+kernel32.lib
+msxmldom.obj
+nican.lib
+NIDAQmx.lib
+SenhaParametros.lib
+winmm.lib
+advapi32.lib
+gdi32.lib
+msxml.obj
+user32.lib
+uuid.lib
+EXE Symbol Module
+Exports Module
+Resource Module

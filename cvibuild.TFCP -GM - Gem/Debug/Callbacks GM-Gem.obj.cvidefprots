@@ -1,0 +1,776 @@
+[TimerManual]
+Class="Function"
+Prototype="int TimerManual(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Timer_2]
+Class="Function"
+Prototype="int Timer_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[StartDiag_Customer]
+Class="Function"
+Prototype="int StartDiag_Customer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[StartDiag_Visteon]
+Class="Function"
+Prototype="int StartDiag_Visteon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ResetManual_Controls]
+Class="Function"
+Prototype="void ResetManual_Controls(int ecu_reset, int berco);"
+
+[FimDiag]
+Class="Function"
+Prototype="int FimDiag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Clear_Comm_CAN]
+Class="Function"
+Prototype="int Clear_Comm_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Mostrar_Comm_CAN]
+Class="Function"
+Prototype="int Mostrar_Comm_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Filtrar_not_diag_CAN]
+Class="Function"
+Prototype="int Filtrar_not_diag_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[SalvarLogsCAN]
+Class="Function"
+Prototype="int SalvarLogsCAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Configurar_Monitorar_CAN]
+Class="Function"
+Prototype="int Configurar_Monitorar_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Tela_Diagnostico]
+Class="Function"
+Prototype="int Tela_Diagnostico(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Liga_CAN_manual]
+Class="Function"
+Prototype="int Liga_CAN_manual(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ReinicializaCan]
+Class="Function"
+Prototype="int ReinicializaCan(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[TacoGauge]
+Class="Function"
+Prototype="int TacoGauge(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VeloGauge]
+Class="Function"
+Prototype="int VeloGauge(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_CruiseEngaged]
+Class="Function"
+Prototype="int Live_CruiseEngaged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_CruiseON]
+Class="Function"
+Prototype="int Live_CruiseON(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_FrontFog]
+Class="Function"
+Prototype="int Live_FrontFog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_hi_beam]
+Class="Function"
+Prototype="int Live_hi_beam(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_rear_fog]
+Class="Function"
+Prototype="int Live_rear_fog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_light_on]
+Class="Function"
+Prototype="int Live_light_on(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_left_turn]
+Class="Function"
+Prototype="int Live_left_turn(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_right_turn]
+Class="Function"
+Prototype="int Live_right_turn(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_hi_temp]
+Class="Function"
+Prototype="int Live_hi_temp(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_oil]
+Class="Function"
+Prototype="int Live_oil(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_Battery]
+Class="Function"
+Prototype="int Live_Battery(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_brake]
+Class="Function"
+Prototype="int Live_brake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_ABS]
+Class="Function"
+Prototype="int Live_ABS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_airbag]
+Class="Function"
+Prototype="int Live_airbag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_tyre_pressure]
+Class="Function"
+Prototype="int Live_tyre_pressure(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_EPS]
+Class="Function"
+Prototype="int Live_EPS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_low_fuel]
+Class="Function"
+Prototype="int Live_low_fuel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_tracklead_green]
+Class="Function"
+Prototype="int Live_tracklead_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_tracklead_amber]
+Class="Function"
+Prototype="int Live_tracklead_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_autohold_green]
+Class="Function"
+Prototype="int Live_autohold_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_autohold_white]
+Class="Function"
+Prototype="int Live_autohold_white(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_line_keeper_amber]
+Class="Function"
+Prototype="int Live_line_keeper_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_line_keeper_green]
+Class="Function"
+Prototype="int Live_line_keeper_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_pedestrian]
+Class="Function"
+Prototype="int Live_pedestrian(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_mph]
+Class="Function"
+Prototype="int Live_mph(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_kmh]
+Class="Function"
+Prototype="int Live_kmh(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_park_asist]
+Class="Function"
+Prototype="int Live_park_asist(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_service_vehicle_soon]
+Class="Function"
+Prototype="int Live_service_vehicle_soon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_traction_control]
+Class="Function"
+Prototype="int Live_traction_control(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_passeng_seatbelt]
+Class="Function"
+Prototype="int Live_passeng_seatbelt(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_clutch_to_start]
+Class="Function"
+Prototype="int Live_clutch_to_start(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_security]
+Class="Function"
+Prototype="int Live_security(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_Esc_Service]
+Class="Function"
+Prototype="int Live_Esc_Service(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_Esc_Off]
+Class="Function"
+Prototype="int Live_Esc_Off(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_glow_plug]
+Class="Function"
+Prototype="int Live_glow_plug(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_service_engine_soon]
+Class="Function"
+Prototype="int Live_service_engine_soon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_Parking_brake]
+Class="Function"
+Prototype="int Live_Parking_brake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_ServiceEletricParkBrake]
+Class="Function"
+Prototype="int Live_ServiceEletricParkBrake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Live_SeatBelt]
+Class="Function"
+Prototype="int Live_SeatBelt(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[BotTemp]
+Class="Function"
+Prototype="int BotTemp(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[AllLeds]
+Class="Function"
+Prototype="int AllLeds(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[All_LedsIll]
+Class="Function"
+Prototype="int All_LedsIll(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[VerErros_CAN]
+Class="Function"
+Prototype="int VerErros_CAN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_ecu_reset]
+Class="Function"
+Prototype="int Diag_ecu_reset(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_corrigir_checksum]
+Class="Function"
+Prototype="int Diag_corrigir_checksum(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_watch_dog_test]
+Class="Function"
+Prototype="int Diag_watch_dog_test(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_cluster_info]
+Class="Function"
+Prototype="int Diag_cluster_info(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_cluster_info_description]
+Class="Function"
+Prototype="int Diag_cluster_info_description(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[DiagMode1]
+Class="Function"
+Prototype="int DiagMode1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Dimming]
+Class="Function"
+Prototype="int Dimming(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_MTC_description]
+Class="Function"
+Prototype="int Diag_MTC_description(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[CloseClusterInfoDescription]
+Class="Function"
+Prototype="int CloseClusterInfoDescription(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Close_MTC_Description]
+Class="Function"
+Prototype="int Close_MTC_Description(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Fim_Tela_Diag]
+Class="Function"
+Prototype="int Fim_Tela_Diag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_rear_fog]
+Class="Function"
+Prototype="int Diag_rear_fog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_SeatBelt]
+Class="Function"
+Prototype="int Diag_SeatBelt(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_left_turn]
+Class="Function"
+Prototype="int Diag_left_turn(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_right_turn]
+Class="Function"
+Prototype="int Diag_right_turn(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Esc_Off]
+Class="Function"
+Prototype="int Diag_Esc_Off(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Esc_Service]
+Class="Function"
+Prototype="int Diag_Esc_Service(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Parking_brake]
+Class="Function"
+Prototype="int Diag_Parking_brake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_clutch_to_start]
+Class="Function"
+Prototype="int Diag_clutch_to_start(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_passeng_seatbelt]
+Class="Function"
+Prototype="int Diag_passeng_seatbelt(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_traction_control]
+Class="Function"
+Prototype="int Diag_traction_control(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_service_vehicle_soon]
+Class="Function"
+Prototype="int Diag_service_vehicle_soon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_park_asist]
+Class="Function"
+Prototype="int Diag_park_asist(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_glow_plug]
+Class="Function"
+Prototype="int Diag_glow_plug(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_kmh]
+Class="Function"
+Prototype="int Diag_kmh(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_mph]
+Class="Function"
+Prototype="int Diag_mph(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_pedestrian]
+Class="Function"
+Prototype="int Diag_pedestrian(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_line_keeper_green]
+Class="Function"
+Prototype="int Diag_line_keeper_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_line_keeper_amber]
+Class="Function"
+Prototype="int Diag_line_keeper_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_tracklead_green]
+Class="Function"
+Prototype="int Diag_tracklead_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_tracklead_amber]
+Class="Function"
+Prototype="int Diag_tracklead_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_autohold_white]
+Class="Function"
+Prototype="int Diag_autohold_white(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_autohold_green]
+Class="Function"
+Prototype="int Diag_autohold_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_hi_temp]
+Class="Function"
+Prototype="int Diag_hi_temp(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_CruiseEngaged]
+Class="Function"
+Prototype="int Diag_CruiseEngaged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_CruiseON]
+Class="Function"
+Prototype="int Diag_CruiseON(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_FrontFog]
+Class="Function"
+Prototype="int Diag_FrontFog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_oil]
+Class="Function"
+Prototype="int Diag_oil(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Battery]
+Class="Function"
+Prototype="int Diag_Battery(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_ServiceEletricParkBrake]
+Class="Function"
+Prototype="int Diag_ServiceEletricParkBrake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_brake]
+Class="Function"
+Prototype="int Diag_brake(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_hi_beam]
+Class="Function"
+Prototype="int Diag_hi_beam(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_light_on]
+Class="Function"
+Prototype="int Diag_light_on(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_gauge_backlight]
+Class="Function"
+Prototype="int Diag_gauge_backlight(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_lcd_backlight]
+Class="Function"
+Prototype="int Diag_lcd_backlight(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_pointers_backlight]
+Class="Function"
+Prototype="int Diag_pointers_backlight(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_tt_illumination]
+Class="Function"
+Prototype="int Diag_tt_illumination(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_run_crank]
+Class="Function"
+Prototype="int Diag_run_crank(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_dic_switch]
+Class="Function"
+Prototype="int Diag_dic_switch(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_dic_analog]
+Class="Function"
+Prototype="int Diag_dic_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_passive_start]
+Class="Function"
+Prototype="int Diag_passive_start(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_read_FCA_out]
+Class="Function"
+Prototype="int Diag_read_FCA_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_read_FCA_DN_out]
+Class="Function"
+Prototype="int Diag_read_FCA_DN_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_read_passive_start_run_out]
+Class="Function"
+Prototype="int Diag_read_passive_start_run_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_read_passive_start_IS1_out]
+Class="Function"
+Prototype="int Diag_read_passive_start_IS1_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_read_passive_start_acc_out]
+Class="Function"
+Prototype="int Diag_read_passive_start_acc_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_read_passive_start_IS2_out]
+Class="Function"
+Prototype="int Diag_read_passive_start_IS2_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_write_FCA_out]
+Class="Function"
+Prototype="int Diag_write_FCA_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_write_FCA_DN_out]
+Class="Function"
+Prototype="int Diag_write_FCA_DN_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_write_passive_start_run_out]
+Class="Function"
+Prototype="int Diag_write_passive_start_run_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_write_passive_start_acc_out]
+Class="Function"
+Prototype="int Diag_write_passive_start_acc_out(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_battery_voltage]
+Class="Function"
+Prototype="int Diag_battery_voltage(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_pcb_temperature]
+Class="Function"
+Prototype="int Diag_pcb_temperature(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_monitor_5v]
+Class="Function"
+Prototype="int Diag_monitor_5v(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_low_fuel_analog]
+Class="Function"
+Prototype="int Diag_low_fuel_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_tire_press_analog]
+Class="Function"
+Prototype="int Diag_tire_press_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_esc_analog]
+Class="Function"
+Prototype="int Diag_esc_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_abs_analog]
+Class="Function"
+Prototype="int Diag_abs_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_parking_analog]
+Class="Function"
+Prototype="int Diag_parking_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_brake_analog]
+Class="Function"
+Prototype="int Diag_brake_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_airbag_analog]
+Class="Function"
+Prototype="int Diag_airbag_analog(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Live_key_status]
+Class="Function"
+Prototype="int Diag_Live_key_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_crystal_verification]
+Class="Function"
+Prototype="int Diag_crystal_verification(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_MEC_status]
+Class="Function"
+Prototype="int Diag_MEC_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_PN_status]
+Class="Function"
+Prototype="int Diag_PN_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_MTC_status]
+Class="Function"
+Prototype="int Diag_MTC_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_sw_version]
+Class="Function"
+Prototype="int Diag_sw_version(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_base_status]
+Class="Function"
+Prototype="int Diag_base_status(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_enable_gauge]
+Class="Function"
+Prototype="int Diag_enable_gauge(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_SleepMode]
+Class="Function"
+Prototype="int Diag_SleepMode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_PointerReturnStopPosition]
+Class="Function"
+Prototype="int Diag_PointerReturnStopPosition(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Init_Flip_Detect]
+Class="Function"
+Prototype="int Diag_Init_Flip_Detect(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Flip_Detect]
+Class="Function"
+Prototype="int Diag_Flip_Detect(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_flip_taco]
+Class="Function"
+Prototype="int Diag_flip_taco(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_flip_velo]
+Class="Function"
+Prototype="int Diag_flip_velo(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_PointerPlacementMode]
+Class="Function"
+Prototype="int Diag_PointerPlacementMode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_programar_MEC]
+Class="Function"
+Prototype="int Diag_programar_MEC(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_programar_PN]
+Class="Function"
+Prototype="int Diag_programar_PN(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_programar_MTC]
+Class="Function"
+Prototype="int Diag_programar_MTC(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Padrao_display]
+Class="Function"
+Prototype="int Diag_Padrao_display(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_security]
+Class="Function"
+Prototype="int Diag_security(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_ABS]
+Class="Function"
+Prototype="int Diag_ABS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_airbag]
+Class="Function"
+Prototype="int Diag_airbag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_service_engine_soon]
+Class="Function"
+Prototype="int Diag_service_engine_soon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_tyre_pressure]
+Class="Function"
+Prototype="int Diag_tyre_pressure(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_EPS]
+Class="Function"
+Prototype="int Diag_EPS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_low_fuel]
+Class="Function"
+Prototype="int Diag_low_fuel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Telltales_all_red]
+Class="Function"
+Prototype="int Telltales_all_red(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Telltales_all_green]
+Class="Function"
+Prototype="int Telltales_all_green(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Telltales_all_amber]
+Class="Function"
+Prototype="int Telltales_all_amber(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Telltales_all_white]
+Class="Function"
+Prototype="int Telltales_all_white(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Telltales_all_blue]
+Class="Function"
+Prototype="int Telltales_all_blue(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Telltales_all]
+Class="Function"
+Prototype="int Telltales_all(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Telltales_display_customer]
+Class="Function"
+Prototype="int Telltales_display_customer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_tacometro_customer]
+Class="Function"
+Prototype="int Diag_tacometro_customer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_mover_gauges_eol_visteon]
+Class="Function"
+Prototype="int Diag_mover_gauges_eol_visteon(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_velocimetro_customer]
+Class="Function"
+Prototype="int Diag_velocimetro_customer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[LeNVM_Diag]
+Class="Function"
+Prototype="int LeNVM_Diag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_clear_bytes_NVM]
+Class="Function"
+Prototype="int Diag_clear_bytes_NVM(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Download_NVM]
+Class="Function"
+Prototype="int Diag_Download_NVM(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Write_live_key_alternativo]
+Class="Function"
+Prototype="int Diag_Write_live_key_alternativo(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Write_Master_Key]
+Class="Function"
+Prototype="int Diag_Write_Master_Key(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Write_Unlock_Key]
+Class="Function"
+Prototype="int Diag_Write_Unlock_Key(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Write_ECU_ID]
+Class="Function"
+Prototype="int Diag_Write_ECU_ID(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_ler_ECU_ID]
+Class="Function"
+Prototype="int Diag_ler_ECU_ID(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Index_manual_livekey]
+Class="Function"
+Prototype="int Index_manual_livekey(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Write_General_Keys]
+Class="Function"
+Prototype="int Diag_Write_General_Keys(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_Update_table]
+Class="Function"
+Prototype="int Diag_Update_table(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Diag_gravar_bytes_NVM]
+Class="Function"
+Prototype="int Diag_gravar_bytes_NVM(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Power_mode]
+Class="Function"
+Prototype="int Power_mode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Get_manual_num_berco_diag]
+Class="Function"
+Prototype="int Get_manual_num_berco_diag(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Get_manual_num_berco]
+Class="Function"
+Prototype="int Get_manual_num_berco(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Quit]
+Class="Function"
+Prototype="int Quit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Ler_dados_tabelas_calibracao]
+Class="Function"
+Prototype="int Ler_dados_tabelas_calibracao(int delay_command, int berco);"
+
+[Word_to_string]
+Class="Function"
+Prototype="char *Word_to_string(unsigned int valor);"
+
+[MostraGroupLeds_Status]
+Class="Function"
+Prototype="void MostraGroupLeds_Status(TELLTALES_GM_GEM telltales, int valor);"
+
+[Teste_CMD]
+Class="Function"
+Prototype="int Teste_CMD(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Prod_1]
+Class="Function"
+Prototype="int Prod_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Prod_2]
+Class="Function"
+Prototype="int Prod_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Send_BC_1]
+Class="Function"
+Prototype="int Send_BC_1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Send_BC_2]
+Class="Function"
+Prototype="int Send_BC_2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Read_VPPS]
+Class="Function"
+Prototype="int Read_VPPS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Write_VPPS]
+Class="Function"
+Prototype="int Write_VPPS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Read_DUNS]
+Class="Function"
+Prototype="int Read_DUNS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[Write_DUNS]
+Class="Function"
+Prototype="int Write_DUNS(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

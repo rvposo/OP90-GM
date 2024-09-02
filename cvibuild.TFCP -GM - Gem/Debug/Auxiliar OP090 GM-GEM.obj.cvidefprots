@@ -1,0 +1,96 @@
+[LeConfiguracoes]
+Class="Function"
+Prototype="int LeConfiguracoes();"
+
+[MensFinal]
+Class="Function"
+Prototype="int MensFinal(char *Rodape, int Mdl_Rj, double Tempo_Total, double res, double Hi_Lim, double Low_Lim, char *Nome_Teste, int teste, int berco);"
+
+[val]
+Class="Function"
+Prototype="long val(char *str, int radix);"
+
+[CINT]
+Class="Function"
+Prototype="int CINT(double V);"
+
+[MOD]
+Class="Function"
+Prototype="int MOD(double a, double b);"
+
+[itostr]
+Class="Function"
+Prototype="char *itostr(int number, unsigned int casas);"
+
+[instr]
+Class="Function"
+Prototype="int instr(unsigned int count, char *str, char ch);"
+
+[Get_Pos]
+Class="Function"
+Prototype="int Get_Pos(char *Source, int ini, char car);"
+
+[StringMid]
+Class="Function"
+Prototype="char *StringMid(char *str, unsigned int inicio, char ch, unsigned int *count);"
+
+[Mensagem]
+Class="Function"
+Prototype="void Mensagem(char *Mens1, char *Mens2, char *Mens3, char *Mens4, int cor, int berco);"
+
+[CodigoData]
+Class="Function"
+Prototype="int CodigoData(int datainicio);"
+
+[CalendarioDiadoAno]
+Class="Function"
+Prototype="int CalendarioDiadoAno();"
+
+[Decimal_to_Hex]
+Class="Function"
+Prototype="void Decimal_to_Hex(int Decimal, char *Hex);"
+
+[IsOnlyNumeric]
+Class="Function"
+Prototype="int IsOnlyNumeric(char *str);"
+
+[Data_e_Hora]
+Class="Function"
+Prototype="void Data_e_Hora(char *Data, char *Time, char *Mlabel);"
+
+[CVI_PlaySound]
+Class="Function"
+Prototype="short CVI_PlaySound(char *fileName, short asynchronous);"
+
+[CVI_PlaySoundEx]
+Class="Function"
+Prototype="short CVI_PlaySoundEx(char *fileName, short asynchronous, short loop, short playDefault, short stopCurrentSound);"
+
+[CVI_StopCurrentSound]
+Class="Function"
+Prototype="void CVI_StopCurrentSound();"
+
+[LeArquivos_LiveKey]
+Class="Function"
+Prototype="int LeArquivos_LiveKey(int berco);"
+
+[LeDados_ASC_LiveKey]
+Class="Function"
+Prototype="int LeDados_ASC_LiveKey(int index, int berco);"
+
+[LerIndexar_arq_index_LiveKey]
+Class="Function"
+Prototype="int LerIndexar_arq_index_LiveKey(int gravar_apenas, int berco);"
+
+[Gerar_etiqueta]
+Class="Function"
+Prototype="int Gerar_etiqueta(char *costumer_pn, char *NSerie, char *vpps, char *duns, char *bar_code_prefixo);"
+
+[twoASCIItoByte]
+Class="Function"
+Prototype="int twoASCIItoByte(const unsigned char *in, unsigned char *out);"
+
+[AtualizaStationID]
+Class="Function"
+Prototype="int AtualizaStationID();"
+

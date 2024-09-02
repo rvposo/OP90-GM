@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<result>
+  <path>V:\GEM\TFCP\Tabelas\Ver_2.0\TST</path>
+  <tab>V:\GEM\TFCP\Tabelas</tab>
+  <dados>X:\Produtos\GEM\TFCP\Dados</dados>
+  <minutos>2</minutos>
+  <bercos>1</bercos>
+  <produto>GEM</produto>
+  <operacao>TFCP</operacao>
+  <ftp>engenharia-pc</ftp>
+  <status>1</status>
+  <tst>0</tst>
+  <commit>1</commit>
+</result>

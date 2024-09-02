@@ -1,0 +1,256 @@
+[ExecutaTestes]
+Class="Function"
+Prototype="double ExecutaTestes(int pos_teste, char *tab_spare, char *pn_cliente, int modelo, int berco);"
+
+[FinalizaTestes]
+Class="Function"
+Prototype="int FinalizaTestes(double res, int berco);"
+
+[StatusTeste]
+Class="Function"
+Prototype="int StatusTeste(double res, int berco);"
+
+[InicializaTestes]
+Class="Function"
+Prototype="int InicializaTestes(int berco);"
+
+[Complet_EndItem]
+Class="Function"
+Prototype="void Complet_EndItem(int berco);"
+
+[VerificaExcecoesExecucao]
+Class="Function"
+Prototype="int VerificaExcecoesExecucao(double *resp, char *mens_falha, int berco);"
+
+[VerificaExcecoesExecucaoBiManual]
+Class="Function"
+Prototype="int VerificaExcecoesExecucaoBiManual(double *resp, char *mens_falha, int berco);"
+
+[VerificaExcecoesMovimentoAtuador]
+Class="Function"
+Prototype="int VerificaExcecoesMovimentoAtuador(char *titulo_atuador, int status_atuador, double *resp, char *mens_falha, int berco);"
+
+[DAQ_manager]
+Class="Function"
+Prototype="void DAQ_manager(int berco);"
+
+[Corrente_Bateria]
+Class="Function"
+Prototype="double Corrente_Bateria(char *mens_falha, int berco);"
+
+[Get_i_ref_EOL]
+Class="Function"
+Prototype="double Get_i_ref_EOL(char *mens_falha, int berco);"
+
+[Corrente_Leds_Ambar]
+Class="Function"
+Prototype="double Corrente_Leds_Ambar(char *mens_falha, int berco);"
+
+[Verificacao_Leds_Ambar_1]
+Class="Function"
+Prototype="double Verificacao_Leds_Ambar_1(char *mens_falha, int berco);"
+
+[Corrente_Leds_Azul]
+Class="Function"
+Prototype="double Corrente_Leds_Azul(char *mens_falha, int berco);"
+
+[Verificacao_Leds_Azul]
+Class="Function"
+Prototype="double Verificacao_Leds_Azul(char *mens_falha, int berco);"
+
+[Corrente_Leds_Vermelhos]
+Class="Function"
+Prototype="double Corrente_Leds_Vermelhos(char *mens_falha, int berco);"
+
+[Verificacao_Leds_Vermelhos_1]
+Class="Function"
+Prototype="double Verificacao_Leds_Vermelhos_1(char *mens_falha, int berco);"
+
+[Corrente_Leds_Verdes]
+Class="Function"
+Prototype="double Corrente_Leds_Verdes(char *mens_falha, int berco);"
+
+[Verificacao_Leds_Verdes_1]
+Class="Function"
+Prototype="double Verificacao_Leds_Verdes_1(char *mens_falha, int berco);"
+
+[Corrente_Leds_Brancos]
+Class="Function"
+Prototype="double Corrente_Leds_Brancos(char *mens_falha, int berco);"
+
+[Verificacao_Leds_Brancos]
+Class="Function"
+Prototype="double Verificacao_Leds_Brancos(char *mens_falha, int berco);"
+
+[Verificacao_Leds_All_ON]
+Class="Function"
+Prototype="double Verificacao_Leds_All_ON(char *mens_falha, int berco);"
+
+[Verificacao_Leds_All_OFF]
+Class="Function"
+Prototype="double Verificacao_Leds_All_OFF(char *mens_falha, int berco);"
+
+[Gages_0_Kmh_0_RPM]
+Class="Function"
+Prototype="double Gages_0_Kmh_0_RPM(char *mens_falha, int berco);"
+
+[Gages_80_Kmh_3000_RPM]
+Class="Function"
+Prototype="double Gages_80_Kmh_3000_RPM(char *mens_falha, int berco);"
+
+[Gages_200_Kmh_8000_RPM]
+Class="Function"
+Prototype="double Gages_200_Kmh_8000_RPM(char *mens_falha, int berco);"
+
+[Verificacao_Padrao_Display_SEG_1]
+Class="Function"
+Prototype="double Verificacao_Padrao_Display_SEG_1(char *mens_falha, int berco);"
+
+[Verificacao_Padrao_Display_SEG_2]
+Class="Function"
+Prototype="double Verificacao_Padrao_Display_SEG_2(char *mens_falha, int berco);"
+
+[Verificacao_Padrao_Display_MONO_1]
+Class="Function"
+Prototype="double Verificacao_Padrao_Display_MONO_1(char *mens_falha, int berco);"
+
+[Verificacao_Padrao_Display_MONO_2]
+Class="Function"
+Prototype="double Verificacao_Padrao_Display_MONO_2(char *mens_falha, int berco);"
+
+[Verificacao_Padrao_Display_MONO_3]
+Class="Function"
+Prototype="double Verificacao_Padrao_Display_MONO_3(char *mens_falha, int berco);"
+
+[Verificacao_Padrao_Display_MONO_4]
+Class="Function"
+Prototype="double Verificacao_Padrao_Display_MONO_4(char *mens_falha, int berco);"
+
+[Verificacao_Padrao_Display_COLOR]
+Class="Function"
+Prototype="double Verificacao_Padrao_Display_COLOR(int padrao, char *mens_falha, int berco);"
+
+[VerificaNumSerie_NVM]
+Class="Function"
+Prototype="double VerificaNumSerie_NVM(char *mens_falha, int berco);"
+
+[Entrar_Diag_Mode_Visteon]
+Class="Function"
+Prototype="double Entrar_Diag_Mode_Visteon(char *mens_falha, int berco);"
+
+[Sair_Diag_Mode_Visteon]
+Class="Function"
+Prototype="double Sair_Diag_Mode_Visteon(char *mens_falha, int berco);"
+
+[Entrar_Diag_Mode_costumer]
+Class="Function"
+Prototype="double Entrar_Diag_Mode_costumer(char *mens_falha, int berco);"
+
+[Sair_Diag_Mode_costumer]
+Class="Function"
+Prototype="double Sair_Diag_Mode_costumer(char *mens_falha, int berco);"
+
+[Ligar_Vibracao]
+Class="Function"
+Prototype="double Ligar_Vibracao(char *mens_falha, int berco);"
+
+[Deligar_Vibracao]
+Class="Function"
+Prototype="double Deligar_Vibracao(char *mens_falha, int berco);"
+
+[Abrir_Porta]
+Class="Function"
+Prototype="double Abrir_Porta(char *mens_falha, int berco);"
+
+[Fechar_Porta]
+Class="Function"
+Prototype="double Fechar_Porta(char *mens_falha, int berco);"
+
+[Inicializa_LedsSaidas]
+Class="Function"
+Prototype="void Inicializa_LedsSaidas(int berco);"
+
+[TensaoCAN]
+Class="Function"
+Prototype="double TensaoCAN(MODO_TENSAO_CAN modo_tensao_can, int berco);"
+
+[ConfiguraCyberSecurity]
+Class="Function"
+Prototype="double ConfiguraCyberSecurity(char *mens_rejeito, int berco);"
+
+[Grava_ECU_ID]
+Class="Function"
+Prototype="double Grava_ECU_ID(char *mens_rejeito, int berco);"
+
+[Ver_CyberSecurity_Ativado]
+Class="Function"
+Prototype="double Ver_CyberSecurity_Ativado(char *mens_rejeito, int berco);"
+
+[LerSoftwareVersion]
+Class="Function"
+Prototype="double LerSoftwareVersion(char *mens_rejeito, int berco);"
+
+[VerificaClientePN]
+Class="Function"
+Prototype="double VerificaClientePN(char *mens_rejeito, int berco);"
+
+[VerificaMEC]
+Class="Function"
+Prototype="double VerificaMEC(char *mens_rejeito, int berco);"
+
+[VerificaBasePartNumber]
+Class="Function"
+Prototype="double VerificaBasePartNumber(char *mens_rejeito, int berco);"
+
+[GravaMEC]
+Class="Function"
+Prototype="double GravaMEC(char *mens_rejeito, int berco);"
+
+[GravaMEC_Service]
+Class="Function"
+Prototype="double GravaMEC_Service(char *mens_rejeito, int berco);"
+
+[GravaClientePN]
+Class="Function"
+Prototype="double GravaClientePN(char *mens_rejeito, int berco);"
+
+[GravaTraceability]
+Class="Function"
+Prototype="double GravaTraceability(char *mens_rejeito, int berco);"
+
+[GravaStatusByte]
+Class="Function"
+Prototype="double GravaStatusByte(int condicao, char *mens_rejeito, int berco);"
+
+[LeStatusByte]
+Class="Function"
+Prototype="double LeStatusByte(char *mens_rejeito, int berco);"
+
+[VerificaSNCluster]
+Class="Function"
+Prototype="double VerificaSNCluster(char *mens_rejeito, int berco);"
+
+[Grava_VPPS]
+Class="Function"
+Prototype="double Grava_VPPS(char *mens_rejeito, int berco);"
+
+[Grava_DUNS]
+Class="Function"
+Prototype="double Grava_DUNS(char *mens_rejeito, int berco);"
+
+[Sinc_test]
+Class="Function"
+Prototype="void Sinc_test(int berco);"
+
+[Verificacao_Cosmetico_TFT]
+Class="Function"
+Prototype="double Verificacao_Cosmetico_TFT(char *mens_falha, int berco);"
+
+[Verificacao_Cosmetico_TACO]
+Class="Function"
+Prototype="double Verificacao_Cosmetico_TACO(char *mens_falha, int berco);"
+
+[Verificacao_Cosmetico_VELO]
+Class="Function"
+Prototype="double Verificacao_Cosmetico_VELO(char *mens_falha, int berco);"
+

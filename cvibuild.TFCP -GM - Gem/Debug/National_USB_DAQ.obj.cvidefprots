@@ -1,0 +1,68 @@
+[Init_NI_daq_6210]
+Class="Function"
+Prototype="int Init_NI_daq_6210(int berco);"
+
+[Stop_NI_daq_6210]
+Class="Function"
+Prototype="int Stop_NI_daq_6210(int berco);"
+
+[Init_NI_4461]
+Class="Function"
+Prototype="int Init_NI_4461();"
+
+[Stop_NI_4461]
+Class="Function"
+Prototype="int Stop_NI_4461();"
+
+[SetSampleClockRate]
+Class="Function"
+Prototype="int SetSampleClockRate(void *taskHandle, double desiredFreq, long sampsPerBuff, double cyclesPerBuff, double *desiredSampClkRate, double *sampsPerCycle, double *resultingSampClkRate, double *resultingFreq);"
+
+[GenSineWave]
+Class="Function"
+Prototype="void GenSineWave(int numElements, double amplitude, double frequency, double *phase, double *sineWave);"
+
+[CenterInRange]
+Class="Function"
+Prototype="void CenterInRange(const double *inputArray, int numElements, double upper, double lower, double *outputArray);"
+
+[VmedioSEnd2canais]
+Class="Function"
+Prototype="double VmedioSEnd2canais(int canalA, int canalB, int berco);"
+
+[Vmedio_NIdaq_6210_1ch]
+Class="Function"
+Prototype="double Vmedio_NIdaq_6210_1ch(int canal, double lim_min, double lim_max, int terminal_conf, int berco);"
+
+[Vmedio_RapidoNIdaq_6210_1ch]
+Class="Function"
+Prototype="double Vmedio_RapidoNIdaq_6210_1ch(int canal, double lim_min, double lim_max, int terminal_conf, int berco);"
+
+[Vmedio_NIdaq_6210_8ch]
+Class="Function"
+Prototype="int Vmedio_NIdaq_6210_8ch(double lim_min, double lim_max, double *canal0, double *canal1, double *canal2, double *canal3, double *canal4, double *canal5, double *canal6, double *canal7, int berco);"
+
+[Atualiza_DA_DAQ6009]
+Class="Function"
+Prototype="int Atualiza_DA_DAQ6009(double tensao_ch0, double tensao_ch1, int berco);"
+
+[EscDigital6009_Byte]
+Class="Function"
+Prototype="int EscDigital6009_Byte(int porta, unsigned long valor_escrever, int berco);"
+
+[EscDigital6009_Bit]
+Class="Function"
+Prototype="int EscDigital6009_Bit(int porta, int linha, unsigned long valor_escrever, int berco);"
+
+[FormaOnda_NIdaq_6210_1ch]
+Class="Function"
+Prototype="int FormaOnda_NIdaq_6210_1ch(double lim_min, double lim_max, int canal, int leit_por_seg, int num_leit, double *leituras, int berco);"
+
+[FormaOnda_daq6009_4ch]
+Class="Function"
+Prototype="int FormaOnda_daq6009_4ch(double lim_min, double lim_max, int leit_por_seg, int num_leit, double *canal0, double *canal1, double *canal2, double *canal3, int berco);"
+
+[LerDigital6009_Bit]
+Class="Function"
+Prototype="int LerDigital6009_Bit(int porta, int *bits_lidos, int berco);"
+
