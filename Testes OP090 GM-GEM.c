@@ -3943,9 +3943,13 @@ return res;
     double VerificaParafuso(char * mens_rejeito)
 {
 int
+	/* Variáveis para duas novas posições de parafusos */
+	res_sup_mid = 0,
+	res_inf_mid = 0,
+
 	res_sup_esq = 0,
 	res_sup_dir = 0,
-        res_inf_esq = 0,
+    res_inf_esq = 0,
 	res_inf_dir = 0,
 	status = 0,
 	tent = 0,

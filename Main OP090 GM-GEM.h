@@ -428,6 +428,10 @@ struct
 		DIC_SW2_ADJ_604R :1,
 		DIC_SW2_ADJ_1624R :1,
 		DIC_SW2_ADJ_3534R :1;
+		
+		/* CARTÃO 5 - SAIDA SENSORES */
+		
+		
 
 } SAIDA;
 

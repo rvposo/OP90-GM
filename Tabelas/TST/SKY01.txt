@@ -1,7 +1,7 @@
 GM , 21/08/2018  - CLUSTER GEM- TFCP
 097, Fecha porta p/ Inspeções Visuais                                  ,1         ,1        ,PASS   ,0
+500, Verificação da presença dos parafusos			       ,1	  ,1  	    ,PASS   ,0
 100, Ligar vibração                                                    ,1         ,1        ,PASS   ,0
-500, Verificação da presença dos parafusos			       ,1	  ,1  	    ,PASS
 001, Corrente Bateria Run/Crank ON (live)                              ,400       ,600      ,mA     ,0
 420, Tensão CAN Bus HI - Min  [NIS]                                    ,2.4       ,2.7      ,Volt   ,0
 425, Tensão CAN Bus HI - Máx  [NIS]                                    ,3.5       ,4.5      ,Volt   ,0
