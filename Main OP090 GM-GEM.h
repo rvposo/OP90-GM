@@ -898,6 +898,7 @@ double Ver_CyberSecurity_Ativado (char * mens_rejeito, int berco);
 double LerSoftwareVersion (char * mens_rejeito, int berco);     
 double VerificaClientePN(char * mens_rejeito, int berco);
 double VerificaMEC(char * mens_rejeito, int berco);
+double VerificaParafuso(char * mens_rejeito);
 double VerificaBasePartNumber(char * mens_rejeito, int berco);
 double GravaMEC(char * mens_rejeito, int berco); 
 double GravaMEC_Service(char * mens_rejeito, int berco);
