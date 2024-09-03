@@ -48,6 +48,11 @@ double ExecutaTestes(int pos_teste, char*tab_spare, char*pn_cliente, int modelo,
 
 	switch (pos_teste)
 	{
+			/* Chamado da função de verificação dos parafusos na tabela */
+	case 500:
+		 res = VerificaParafusos(dados_berco[berco].MensagemFalha1);
+		break;
+			/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 	case 1:
 		res = Corrente_Bateria( dados_berco[berco].MensagemFalha1, berco );  //ck
 		break;
@@ -153,6 +158,8 @@ double ExecutaTestes(int pos_teste, char*tab_spare, char*pn_cliente, int modelo,
 	case 46:
 		res = VerificaClientePN( dados_berco[berco].MensagemFalha1, berco );
 		break;
+		
+	
 		
 	//sistema	
 	case 97:
@@ -3932,7 +3939,98 @@ Error:
 return res;
 	
 }
+  /* Função para verificação dos parafusos */
+    double VerificaParafuso(char * mens_rejeito)
+{
+int
+	res_sup_esq = 0,
+	res_sup_dir = 0,
+        res_inf_esq = 0,
+	res_inf_dir = 0,
+	status = 0,
+	tent = 0,
+	max_tent = 3;
+unsigned char
+	board_serial[25] = {0},
+	sulfixo_serial[25] = {0},
+	prefixo_serial[25] = {0},
+	r_board_serial[25] = {0};
+	
+double
+	res = 0;
+	
 
+	
+
+		strcpy(mens_rejeito,"");
+		strcpy(mens_montagem_2, "Verificando a presen?as das travas esquerda e direita");
+		strcpy(mens_montagem_3,   " ");
+reteste:
+	
+		if (STATUS.TravaSupEsquerda) //OK
+		{
+		  	 res_sup_esq=1;
+		}
+		else
+		{
+				
+			   Fmt(mens_rejeito, "%s<%s%s%s%s", "Falha ao verificar presen?a do parafuso Superior Esquerdo ", "", "", "");
+		        res_sup_esq = 0;
+		}
+		
+		if (STATUS.TravaSupDireita) //OK
+		{
+		  	 	res_sup_dir=1;
+		}
+		else
+		{
+				
+			   Fmt(mens_rejeito, "%s<%s%s%s%s", "Falha ao verificar presen?a do parafuso Superior Direito ", "", "", "");
+		        	res_sup_dir = 0;
+		}
+		if (STATUS.TravaInfEsquerda) //OK
+		{
+		  	 res_inf_esq=1;
+		}
+		else
+		{
+				
+			   Fmt(mens_rejeito, "%s<%s%s%s%s", "Falha ao verificar presen?a do parafuso Inferior Esquerdo ", "", "", "");
+		        res_inf_esq = 0;
+		}
+		
+		if (STATUS.TravaInfDireita) //OK
+		{
+		  	 	res_inf_dir=1;
+		}
+		else
+		{
+				
+			   Fmt(mens_rejeito, "%s<%s%s%s%s", "Falha ao verificar presen?a do parafuso Inferior Direita ", "", "", "");
+		        	res_inf_dir = 0;
+		}
+	   if (res_sup_esq==1 && res_sup_dir==1 && res_inf_esq==1 && res_inf_dir==1){
+	      res=1; 
+	   }
+	   else
+	   {
+		  res=-101; 
+	   }
+	
+		
+	
+
+		if(((res > Teste[teste].LimAlto) || (res < Teste[teste].LimBaixo)) && tent <= max_tent)
+		{
+			tent++;
+			Delay_thread(0.05);
+			goto reteste;
+		}
+		
+return res;
+		
+}
+  /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 
 
 /*-----------------------------------------------------------------------------------------

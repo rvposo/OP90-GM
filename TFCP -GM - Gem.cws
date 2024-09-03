@@ -31,7 +31,7 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 11
+Number of Opened Files = 4
 Window Confinement Region Enabled = True
 MainColumnWidth = 197
 FileDateColumnWidth = 70
@@ -75,9 +75,8 @@ Disk Date = 3758701551
 In Projects = "1,"
 Window Top = 78
 Window Left = 31
-Window Z-Order = 4
-Source Window State Line0001 = "1,3300,3301,3300,0,8160,44,1,0,66,0,2269,0,2285,31,15,3109,0,3130,16,349,579,1,0"
-Source Window State Line0002 = ","
+Window Z-Order = 3
+Source Window State = "1,3225,3225,3225,22,38,38,0,3,66,0,2269,0,2285,31,15,3221,0,3225,22,349,579,1,0,"
 Breakpoint 0001 = "609,0,enabled,"
 Breakpoint 0002 = "1324,0,enabled,"
 Breakpoint 0003 = "1504,0,enabled,"
@@ -90,8 +89,7 @@ Disk Date = 3660040043
 In Projects = "1,"
 Window Top = 62
 Window Left = 26
-Window Z-Order = 5
-Source Window State = "1,2,2,2,10,19,10,0,0,83,0,0,0,0,0,15,544,0,556,8,349,715,1,0,"
+Source Window State = "1,2,2,2,10,19,10,0,0,0,0,0,0,0,0,0,544,0,556,8,349,715,1,0,"
 Breakpoint 0001 = "866,0,enabled,"
 
 [File 0006]
@@ -117,10 +115,10 @@ In Projects = "1,"
 Window Top = 38
 Window Left = 10
 Window Z-Order = 1
-Source Window State = "1,2012,2012,2012,17,44,44,0,0,138,0,0,0,0,0,22,2009,0,1990,40,349,715,1,0,"
-Breakpoint 0001 = "716,0,enabled,"
-Breakpoint 0002 = "4254,0,enabled,"
-Line Tags = "2047,"
+Source Window State = "1,3944,3944,3944,32,33,32,0,0,138,0,0,0,0,0,20,3946,0,3947,28,349,715,1,0,"
+Breakpoint 0001 = "723,0,enabled,"
+Breakpoint 0002 = "4352,0,enabled,"
+Line Tags = "2054,"
 
 [File 0008]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Sistem"
@@ -130,8 +128,7 @@ Disk Date = 3765817899
 In Projects = "1,"
 Window Top = 38
 Window Left = 90
-Window Z-Order = 7
-Source Window State = "1,2351,2351,2351,0,1,1,1,0,98,0,0,0,0,0,31,2384,0,2425,2,690,828,1,0,"
+Source Window State = "1,2351,2351,2351,0,1,1,1,0,0,0,0,0,0,0,0,2384,0,2425,2,690,828,1,0,"
 Breakpoint 0001 = "1235,0,enabled,"
 
 [File 0009]
@@ -146,61 +143,28 @@ Source Window State = "1,282,282,282,4,17,17,0,0,0,0,0,0,0,0,0,525,0,537,38,349,
 Breakpoint 0001 = "310,0,enabled,"
 
 [File 0010]
-Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Master"
-Path Line0002 = "_e_Negative_Samples.c"
+Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CIMSoc"
+Path Line0002 = "kets.c"
 File Type = "CSource"
-Disk Date = 3660040043
+Disk Date = 3660040042
 In Projects = "1,"
-Window Top = 64
+Window Top = 62
 Window Left = 26
-Window Z-Order = 11
-Source Window State = "1,0,0,0,0,0,0,0,0,83,0,0,0,0,0,15,0,0,0,0,349,715,1,0,"
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,83,0,0,0,0,0,15,322,0,329,15,349,715,1,0,"
 
 [File 0011]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Main O"
 Path Line0002 = "P090 GM-GEM.h"
 File Type = "Include"
-Disk Date = 3765818215
+Disk Date = 3808209941
 In Projects = "1,"
 Window Top = 38
 Window Left = 10
 Window Z-Order = 2
-Source Window State = "1,864,864,864,7,31,31,0,3,83,0,442,0,0,0,15,852,0,864,7,349,715,1,0,"
+Source Window State = "1,891,891,891,50,51,51,0,0,83,0,330,0,0,0,15,895,0,900,23,349,715,1,29,"
 
 [File 0012]
-Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Callba"
-Path Line0002 = "cks OP090 GM-GEM.c"
-File Type = "CSource"
-Disk Date = 3684914632
-In Projects = "1,"
-Window Top = 38
-Window Left = 10
-Window Z-Order = 10
-Source Window State = "1,1042,1042,1042,12,35,12,0,0,83,0,0,0,0,0,15,952,0,959,28,349,715,1,0,"
-
-[File 0013]
-Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CAN GM"
-Path Line0002 = "-Gem.h"
-File Type = "Include"
-Disk Date = 3741094028
-In Projects = "1,"
-Window Top = 38
-Window Left = 10
-Window Z-Order = 8
-Source Window State = "1,478,478,478,4,17,17,1,0,63,0,0,0,0,0,15,106,0,118,18,349,555,1,0,"
-
-[File 0014]
-Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CyberX"
-Path Line0002 = "ML.h"
-File Type = "Include"
-Disk Date = 3660040042
-In Projects = "1,"
-Window Top = 95
-Window Left = 42
-Window Z-Order = 9
-Source Window State = "1,0,0,0,0,0,0,0,0,79,0,0,0,0,0,15,67,0,78,75,349,683,1,0,"
-
-[File 0015]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Auto O"
 Path Line0002 = "P090 GM-GEM.uir"
 File Type = "User Interface Resource"
@@ -210,20 +174,8 @@ Window Top = 95
 Window Left = 34
 Window Height = 596
 Window Width = 1004
-Window Z-Order = 6
 
-[File 0016]
-Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Auxili"
-Path Line0002 = "ar OP090 GM-GEM.c"
-File Type = "CSource"
-Disk Date = 3660040042
-In Projects = "1,"
-Window Top = 62
-Window Left = 26
-Window Z-Order = 3
-Source Window State = "1,132,132,132,36,48,36,1,0,83,0,0,0,0,0,17,1279,0,1294,12,397,715,1,0,"
-
-[File 0017]
+[File 0013]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Diag G"
 Path Line0002 = "M-Gem.uir"
 File Type = "User Interface Resource"
@@ -234,7 +186,7 @@ Window Left = 55
 Window Height = 397
 Window Width = 683
 
-[File 0018]
+[File 0014]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Manual"
 Path Line0002 = " OP090 GM-GEM.uir"
 File Type = "User Interface Resource"
@@ -245,7 +197,7 @@ Window Left = 26
 Window Height = 284
 Window Width = 659
 
-[File 0019]
+[File 0015]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Mensag"
 Path Line0002 = "ens.uir"
 File Type = "User Interface Resource"
@@ -256,7 +208,7 @@ Window Left = 90
 Window Height = 349
 Window Width = 715
 
-[File 0020]
+[File 0016]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/padrao"
 Path Line0002 = ".uir"
 File Type = "User Interface Resource"
@@ -267,14 +219,28 @@ Window Left = 58
 Window Height = 397
 Window Width = 683
 
-[File 0021]
+[File 0017]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Senha."
 Path Line0002 = "uir"
 File Type = "User Interface Resource"
 Disk Date = 3660040043
 In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Height = 326
+Window Width = 691
 
-[File 0022]
+[File 0018]
+Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Auxili"
+Path Line0002 = "ar OP090 GM-GEM.c"
+File Type = "CSource"
+Disk Date = 3660040042
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Source Window State = "1,132,132,132,36,48,36,1,0,0,0,0,0,0,0,0,1279,0,1294,12,397,715,1,0,"
+
+[File 0019]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/base64"
 Path Line0002 = ".c"
 File Type = "CSource"
@@ -284,7 +250,7 @@ Window Top = 32
 Window Left = 10
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29,0,51,26,349,715,1,0,"
 
-[File 0023]
+[File 0020]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Callba"
 Path Line0002 = "cks GM-Gem.c"
 File Type = "CSource"
@@ -294,17 +260,17 @@ Window Top = 92
 Window Left = 42
 Source Window State = "1,24,24,24,20,21,20,1,0,0,0,0,0,0,0,0,0,0,3427,21,284,523,1,0,"
 
-[File 0024]
-Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CIMSoc"
-Path Line0002 = "kets.c"
+[File 0021]
+Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Callba"
+Path Line0002 = "cks OP090 GM-GEM.c"
 File Type = "CSource"
-Disk Date = 3660040042
+Disk Date = 3684914632
 In Projects = "1,"
-Window Top = 62
-Window Left = 26
-Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,0,0,"
+Window Top = 38
+Window Left = 10
+Source Window State = "1,1042,1042,1042,12,35,12,0,0,0,0,0,0,0,0,0,952,0,959,28,349,715,1,0,"
 
-[File 0025]
+[File 0022]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/cvixml"
 Path Line0002 = ".c"
 File Type = "CSource"
@@ -314,7 +280,7 @@ Window Top = 212
 Window Left = 106
 Source Window State = "1,372,372,372,13,20,20,0,0,0,0,0,0,0,0,0,394,0,426,0,349,715,0,0,"
 
-[File 0026]
+[File 0023]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Global"
 Path Line0002 = " Error Tracking.c"
 File Type = "CSource"
@@ -324,7 +290,17 @@ Window Top = 32
 Window Left = 10
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,39,35,349,715,1,0,"
 
-[File 0027]
+[File 0024]
+Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Master"
+Path Line0002 = "_e_Negative_Samples.c"
+File Type = "CSource"
+Disk Date = 3660040043
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+
+[File 0025]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Adm Eq"
 Path Line0002 = "uip.h"
 File Type = "Include"
@@ -334,7 +310,7 @@ Window Top = 152
 Window Left = 74
 Source Window State = "1,16,16,16,11,16,16,1,0,0,0,0,0,0,0,0,0,0,23,26,323,715,1,0,"
 
-[File 0028]
+[File 0026]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Auto O"
 Path Line0002 = "P090 GM-GEM.h"
 File Type = "Include"
@@ -344,7 +320,7 @@ Window Top = 38
 Window Left = 10
 Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
 
-[File 0029]
+[File 0027]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/bd-sup"
 Path Line0002 = "port.h"
 File Type = "Include"
@@ -354,13 +330,33 @@ Window Top = 64
 Window Left = 26
 Source Window State = "1,27,27,27,4,15,15,0,0,0,0,0,0,0,0,0,12,0,22,11,297,715,1,0,"
 
-[File 0030]
+[File 0028]
+Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CAN GM"
+Path Line0002 = "-Gem.h"
+File Type = "Include"
+Disk Date = 3741094028
+In Projects = "1,"
+Window Top = 38
+Window Left = 10
+Source Window State = "1,478,478,478,4,17,17,1,0,0,0,0,0,0,0,0,106,0,118,18,349,555,1,0,"
+
+[File 0029]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CIMSoc"
 Path Line0002 = "kets.h"
 File Type = "Include"
 Disk Date = 3660040042
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0030]
+Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CyberX"
+Path Line0002 = "ML.h"
+File Type = "Include"
+Disk Date = 3660040042
+In Projects = "1,"
+Window Top = 95
+Window Left = 42
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0,78,75,349,683,1,0,"
 
 [File 0031]
 Path Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/DAQ_MX"
@@ -456,28 +452,14 @@ Disk Date = 3660040043
 In Projects = "1,"
 
 [Tab Order]
-Tab 0001 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Master"
-Tab 0001 Line0002 = "_e_Negative_Samples.c"
-Tab 0002 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Callba"
-Tab 0002 Line0002 = "cks OP090 GM-GEM.c"
-Tab 0003 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CyberX"
-Tab 0003 Line0002 = "ML.h"
-Tab 0004 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CAN GM"
-Tab 0004 Line0002 = "-Gem.h"
-Tab 0005 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Sistem"
-Tab 0005 Line0002 = "a OP090 GM-GEM.c"
-Tab 0006 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Auto O"
-Tab 0006 Line0002 = "P090 GM-GEM.uir"
-Tab 0007 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Nation"
-Tab 0007 Line0002 = "al_USB_DAQ.c"
-Tab 0008 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Main O"
-Tab 0008 Line0002 = "P090 GM-GEM.c"
-Tab 0009 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Auxili"
-Tab 0009 Line0002 = "ar OP090 GM-GEM.c"
-Tab 0010 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Main O"
-Tab 0010 Line0002 = "P090 GM-GEM.h"
-Tab 0011 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Testes"
-Tab 0011 Line0002 = " OP090 GM-GEM.c"
+Tab 0001 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Testes"
+Tab 0001 Line0002 = " OP090 GM-GEM.c"
+Tab 0002 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/CIMSoc"
+Tab 0002 Line0002 = "kets.c"
+Tab 0003 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Main O"
+Tab 0003 Line0002 = "P090 GM-GEM.h"
+Tab 0004 Line0001 = "/c/Users/cmelo/Desktop/Desenvolvimento/GM/OP90/TFCP GM-Gem_3.2.4 Sensores/Main O"
+Tab 0004 Line0002 = "P090 GM-GEM.c"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True
