@@ -483,13 +483,14 @@ jp_1:
 			STATUS.Trava_Porta_Avc = matrix.bit_a0;
 			STATUS.Trava_Porta_Rec = matrix.bit_a1;
 			STATUS.Porta_Fechada = matrix.bit_a2;
-			STATUS.Spare_in_503 = matrix.bit_a3;
-			STATUS.Spare_in_504 = matrix.bit_a4;
-			STATUS.Spare_in_505 = matrix.bit_a5;
-			STATUS.Spare_in_506 = matrix.bit_a6;
-			STATUS.Spare_in_507 = matrix.bit_a7;
-			///
-			STATUS.Spare_in_508 = matrix.bit_b0;
+				 /* Endereços Sensores */	
+	        STATUS.StatusSensorSupEsq = matrix.bit_a3;		            
+	        STATUS.StatusSensorSupDir = matrix.bit_a4;		            
+	        STATUS.StatusSensorInfEsq = matrix.bit_a5;		            
+	        STATUS.StatusSensorInfDir = matrix.bit_a6;		          
+	        STATUS.StatusSensorSupMid = matrix.bit_a7;		
+	        STATUS.StatusSensorInfMid = matrix.bit_b0;		
+	            /*-+-+-+-+-+-+-+-+-+-+*/
 			STATUS.Spare_in_509 = matrix.bit_b1;
 			STATUS.Spare_in_510 = matrix.bit_b2;
 			STATUS.Spare_in_511 = matrix.bit_b3;
