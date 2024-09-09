@@ -49,7 +49,7 @@ double ExecutaTestes(int pos_teste, char*tab_spare, char*pn_cliente, int modelo,
 	switch (pos_teste)
 	{
 			/* Chamado da função de verificação dos parafusos na tabela */
-	case 500:
+	case 550:
 		 res = VerificaParafusos(dados_berco[berco].MensagemFalha1);
 		break;
 			/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
@@ -3970,7 +3970,12 @@ double
 		strcpy(mens_montagem_2, "Verificando a presen?as das travas esquerda e direita");
 		strcpy(mens_montagem_3,   " ");
 reteste:
-	
+		/* Condicionais para verificação na presença dos parafusos */
+		/* 
+		TO DO: Identificar as portas no cartão I/O, declara-las e atribui-las no Main.h
+		TO DO: Adicionar nas condicionais, substituindo as variáveis placeholder.
+		*/
+		
 		if (STATUS.TravaSupEsquerda) //OK
 		{
 		  	 res_sup_esq=1;
@@ -4013,7 +4018,9 @@ reteste:
 			   Fmt(mens_rejeito, "%s<%s%s%s%s", "Falha ao verificar presen?a do parafuso Inferior Direita ", "", "", "");
 		        	res_inf_dir = 0;
 		}
-	   if (res_sup_esq==1 && res_sup_dir==1 && res_inf_esq==1 && res_inf_dir==1){
+		
+		
+	   if (res_sup_esq==1 && res_sup_dir==1 && res_inf_esq==1 && res_inf_dir==1 && res_sup_mid==1 & res_inf_mid==1){
 	      res=1; 
 	   }
 	   else
