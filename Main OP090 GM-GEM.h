@@ -18,21 +18,21 @@
 //#define on	    					1
 //#endif /* on */
 
-/* 	A macro statusChk é útil para implementar uma verificação de erro para operações
-	executadas em sequencia. Esta macro pode ser colocada em torno de chamadas de função para
-    ativar um 'flag' indicando a ocorrência de uma falha, por meio da variável statusErro.
+/* 	A macro statusChk ï¿½ ï¿½til para implementar uma verificaï¿½ï¿½o de erro para operaï¿½ï¿½es
+	executadas em sequencia. Esta macro pode ser colocada em torno de chamadas de funï¿½ï¿½o para
+ï¿½ï¿½ï¿½ï¿½ativar um 'flag' indicando a ocorrï¿½ncia de uma falha, por meio da variï¿½vel statusErro.
 
-    Esta macro faz as seguintes suposições:
+ï¿½ï¿½ï¿½ï¿½Esta macro faz as seguintes suposiï¿½ï¿½es:
 
-        1) As seguintes declarações de variáveis locais:
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1) As seguintes declaraï¿½ï¿½es de variï¿½veis locais:
 
-            int status = 0;
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½int status = 0;
 			int statusErro = 0;
 
-        2) Toda chamada de função ou código de erro contido em uma macro statusChk ()
-            é assumido para retornar um inteiro que, se negativo, é o código para
-            o erro que ocorreu. Se o valor for zero ou positivo, então a o valor de
-			statusErro se manterá inalterado.
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2) Toda chamada de funï¿½ï¿½o ou cï¿½digo de erro contido em uma macro statusChk ()
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ assumido para retornar um inteiro que, se negativo, ï¿½ o cï¿½digo para
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½o erro que ocorreu. Se o valor for zero ou positivo, entï¿½o a o valor de
+			statusErro se manterï¿½ inalterado.
 */
 
 #ifndef statusChk
@@ -89,7 +89,7 @@
 #define STATUS_FALTANDO			0xFF
 
 #define TAM_MAX_RESP_PIC			100
-#define NUM_MAX_LINHAS_ARQ			150  //numero máximo de linhas permitido em um arquivo
+#define NUM_MAX_LINHAS_ARQ			150  //numero mï¿½ximo de linhas permitido em um arquivo
 #define	NAO_SAIR					0
 #define SAIR_LOOP_SEM_ERRO			1
 #define	SEM_ERRO					0
@@ -145,7 +145,7 @@
 #define	TAMANHO_BARCODE_ENDITEM		11    
 #define	TAMANHO_PREFIXO_ENDITEM		5
 #define TIME_OUT_BCR_ENDITEM		5.0   //tempo em segundos  //
-#define TEMPO_DESL_BCR				10.0  //tempo em segundos - DESLIGA barcode após retirar o produto //
+#define TEMPO_DESL_BCR				10.0  //tempo em segundos - DESLIGA barcode apï¿½s retirar o produto //
 
 #define PADRAO_PREFIXO_GRUPO        "SJ"
 
@@ -172,7 +172,7 @@
 	
 #define TEMPO_MAX_SCANNER_LIGADO	120 // segundos
 
-//////////    ENDEREÇOS CARTÕES DE I/O    //////////
+//////////    ENDEREï¿½OS CARTï¿½ES DE I/O    //////////
 
 #define END_CARTAO_1_ENTRADA		0x40
 #define END_CARTAO_5_ENTRADA		0x4E
@@ -269,7 +269,7 @@ typedef enum
 MODO_THREAD modo_thread;
 
 
-/***************** Enumeracao dos modos de leitura de tensão do CAN ********************/
+/***************** Enumeracao dos modos de leitura de tensï¿½o do CAN ********************/
 typedef enum 
 { 
 	CAN_HI_MIN=0,
@@ -322,10 +322,12 @@ typedef struct //esta estrutura define o formato dos bits em uma porta
 		bit_b5:1,
 		bit_b6:1,
 		bit_b7:1;
+
+
 	
 }porta;
 
-//****************************** Declaração das variáveis de ENTRADA ******************************/
+//****************************** Declaraï¿½ï¿½o das variï¿½veis de ENTRADA ******************************/
 struct
 {
 	/////////// cartao_1 ///////////
@@ -348,16 +350,22 @@ struct
 		Status_Emergencia:1;
 		
 	/////////// cartao_5 ///////////
+
+   /* Alternativa: Utilizar o cartÃ£o 5 para endereÃ§amento dos LEDs, eliminando a necessidade de utilizar outro cartÃ£o */
+
 	unsigned int
 		Trava_Porta_Avc :1,
 		Trava_Porta_Rec :1,
 		Porta_Fechada 	:1,
-		Spare_in_503 	:1,
-		Spare_in_504	:1,
-		Spare_in_505 	:1,
-		Spare_in_506 	:1,
-		Spare_in_507 	:1,
-		Spare_in_508 	:1,
+
+		/*Utilizado os endereÃ§os placeholders Spare_in_503 atÃ© Spare_in_508 para endereÃ§ar os sensores*/
+
+		StatusSensorSupEsq 	:1,
+		StatusSensorSupDir	:1,
+		StatusSensorInfEsq 	:1,
+		StatusSensorInfDir 	:1,
+		StatusSensorSupMid 	:1,
+		StatusSensorInfMid 	:1,
 		Spare_in_509 	:1,
 		Spare_in_510 	:1,
 		Spare_in_511 	:1,
@@ -366,9 +374,23 @@ struct
 		Spare_in_514 	:1,
 		Spare_in_515 	:1;
 
+	/* Status Sensores dos Parafusos	*/
+	/* unsigned int
+
+	    StatusSensorSupEsq	:1,
+		StatusSensorSupDir	:1,
+		StatusSensorInfEsq	:1,
+		StatusSensorInfDir	:1,
+		StatusSensorSupMid	:1,
+		StatusSensorInfMid	:1;
+*/
+
+	
+		
+
 } STATUS;
 
-/****************************** Declaração das variaveis de SAIDA ******************************/
+/****************************** Declaraï¿½ï¿½o das variaveis de SAIDA ******************************/
 
 struct
 {
@@ -429,9 +451,16 @@ struct
 		DIC_SW2_ADJ_1624R :1,
 		DIC_SW2_ADJ_3534R :1;
 		
-		/* CARTÃO 5 - SAIDA SENSORES */
+		/* CARTï¿½O 5 - SAIDA SENSORES */
 		
+		unsigned int
 		
+		SensorInfEsq	:1,
+		SensorSupEsq	:1,
+		SensorInfDir	:1,
+		SensorSupDir	:1,
+		SensorInfMid	:1,
+		SensorSupMid	:1;
 
 } SAIDA;
 
@@ -559,7 +588,7 @@ struct
 
 } dados_scanner[NUMERO_DE_BERCOS + 1];
 
-//////////    Declaração de variaveis    //////////
+//////////    Declaraï¿½ï¿½o de variaveis    //////////
 
 ALARME_SOM alarme_som;
 
@@ -779,7 +808,7 @@ int
 	HW_present;	
 
 /*********************************************************************************************
- *						        		PROTOTIPOS DE FUNÇÕES  						         *
+ *						        		PROTOTIPOS DE FUNï¿½ï¿½ES  						         *
  *********************************************************************************************/
 int SolicitaAtualizarTabela(void);
 int CalendarioDiadoAno(void);
